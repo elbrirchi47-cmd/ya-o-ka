@@ -1,0 +1,2122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>✨ Bourse Nostalgie — Cloud Gemini Pro, Boost Ultra-Dynamique & Réseau International</title>
+<style>
+  :root {
+    --bg-deep: #0a0710;
+    --bg-card: #130e1f;
+    --bg-elevated: #1a1333;
+    --border-subtle: #2d2447;
+    --gold: #f59e0b;
+    --gold-light: #fbbf24;
+    --violet: #8b5cf6;
+    --violet-light: #c4b5fd;
+    --emerald: #10b981;
+    --cyan: #06b6d4;
+    --danger: #ef4444;
+    --text-main: #e2e8f0;
+    --text-muted: #94a3b8;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg-deep);
+    color: var(--text-main);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  ::-webkit-scrollbar { width: 6px; height: 6px; background: var(--bg-card); }
+  ::-webkit-scrollbar-thumb { background: linear-gradient(180deg, var(--gold), var(--violet)); border-radius: 4px; }
+
+  /* Ticker Live */
+  .ticker-wrap {
+    width: 100%;
+    overflow: hidden;
+    background: #050308;
+    border-bottom: 1px solid var(--border-subtle);
+    height: 32px;
+    display: flex;
+    align-items: center;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 11px;
+    position: relative;
+  }
+  .ticker {
+    display: flex;
+    white-space: nowrap;
+    width: max-content;
+    animation: tickerAnim 45s linear infinite;
+  }
+  .ticker:hover { animation-play-state: paused; }
+  .ticker-item { padding-right: 34px; color: #cbd5e1; }
+  .ticker-item span.up { color: var(--emerald); font-weight: 800; }
+  .ticker-item span.cyan { color: var(--cyan); font-weight: 800; }
+  .ticker-item span.gold { color: var(--gold-light); font-weight: 800; }
+  @keyframes tickerAnim {
+    0% { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(-50%, 0, 0); }
+  }
+
+  /* Header & Sub-bar */
+  .header {
+    background: linear-gradient(135deg, rgba(19,14,31,0.96) 0%, rgba(26,19,51,0.96) 50%, rgba(19,14,31,0.96) 100%);
+    border-bottom: 1px solid rgba(245, 158, 11, 0.35);
+    padding: 12px 22px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 60;
+    backdrop-filter: blur(14px);
+  }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .brand-icon {
+    width: 44px;
+    height: 44px;
+    background: linear-gradient(135deg, var(--gold), var(--violet), var(--cyan));
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: #fff;
+    box-shadow: 0 0 24px rgba(139, 92, 246, 0.45);
+    flex-shrink: 0;
+  }
+  .brand-title { font-size: 19px; font-weight: 900; letter-spacing: -0.4px; color: #fff; }
+  .brand-title span { color: var(--gold); }
+  .brand-sub { font-size: 11px; color: var(--violet-light); display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+
+  .cloud-subbar {
+    background: rgba(13, 9, 24, 0.95);
+    border-bottom: 1px solid var(--border-subtle);
+    padding: 8px 22px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 11px;
+  }
+  .pill-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #0a0710;
+    border: 1px solid var(--border-subtle);
+    padding: 5px 11px;
+    border-radius: 999px;
+    color: #e2e8f0;
+  }
+  .dot-live {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--emerald);
+    box-shadow: 0 0 9px var(--emerald);
+    animation: pulseDot 1.3s infinite;
+    flex-shrink: 0;
+  }
+  @keyframes pulseDot { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.45; transform: scale(0.85); } }
+
+  .container { max-width: 1500px; margin: 0 auto; padding: 20px; }
+
+  /* Hero Section */
+  .hero {
+    background: radial-gradient(ellipse at top left, rgba(245, 158, 11, 0.16), transparent 50%),
+                radial-gradient(ellipse at top right, rgba(6, 182, 212, 0.14), transparent 50%),
+                radial-gradient(ellipse at bottom center, rgba(139, 92, 246, 0.16), transparent 60%),
+                linear-gradient(135deg, #130e1f 0%, #0d0917 100%);
+    border: 1px solid rgba(139, 92, 246, 0.4);
+    border-radius: 20px;
+    padding: 24px;
+    margin-bottom: 22px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+  }
+  .hero-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+    margin-top: 20px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  .stat-card {
+    background: rgba(10, 7, 16, 0.82);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 15px;
+    padding: 15px;
+    transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+  }
+  .stat-card:hover { transform: translateY(-2px); border-color: rgba(6, 182, 212, 0.5); box-shadow: 0 8px 24px rgba(6, 182, 212, 0.12); }
+  .stat-card .lbl { font-size: 10px; color: var(--text-muted); text-transform: uppercase; font-weight: 800; letter-spacing: 0.5px; }
+  .stat-card .val { font-size: 22px; font-weight: 900; color: #fff; margin-top: 4px; }
+  .stat-card .sub { font-size: 11px; color: var(--emerald); margin-top: 3px; }
+
+  /* Tabs */
+  .tabs {
+    display: flex;
+    gap: 8px;
+    border-bottom: 1px solid var(--border-subtle);
+    padding-bottom: 10px;
+    margin-bottom: 22px;
+    overflow-x: auto;
+  }
+  .tab-btn {
+    background: rgba(19, 14, 31, 0.75);
+    border: 1px solid transparent;
+    color: var(--text-muted);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 10px 16px;
+    border-radius: 11px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s;
+  }
+  .tab-btn.active {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(139, 92, 246, 0.2));
+    color: var(--gold-light);
+    border-color: rgba(245, 158, 11, 0.55);
+    box-shadow: 0 0 16px rgba(245, 158, 11, 0.18);
+  }
+  .tab-btn:hover:not(.active) { color: #fff; background: rgba(255, 255, 255, 0.06); }
+
+  /* Buttons */
+  .btn {
+    padding: 9px 16px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+  .btn:active { transform: scale(0.97); }
+  .btn-propulsion {
+    background: linear-gradient(135deg, #f59e0b 0%, #8b5cf6 50%, #06b6d4 100%);
+    background-size: 200% 200%;
+    animation: gradientShift 4s ease infinite;
+    color: #fff;
+    font-weight: 900;
+    box-shadow: 0 0 22px rgba(245, 158, 11, 0.45);
+  }
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  .btn-propulsion:hover { transform: translateY(-1px); box-shadow: 0 0 28px rgba(6, 182, 212, 0.65); }
+  .btn-primary { background: linear-gradient(135deg, #f59e0b, #ea580c); color: #fff; box-shadow: 0 4px 15px rgba(245, 158, 11, 0.28); }
+  .btn-primary:hover { opacity: 0.92; transform: translateY(-1px); }
+  .btn-violet { background: linear-gradient(135deg, #8b5cf6, #6366f1); color: #fff; box-shadow: 0 4px 15px rgba(139, 92, 246, 0.28); }
+  .btn-violet:hover { opacity: 0.92; transform: translateY(-1px); }
+  .btn-emerald { background: linear-gradient(135deg, #10b981, #059669); color: #fff; box-shadow: 0 4px 15px rgba(16, 185, 129, 0.28); }
+  .btn-emerald:hover { opacity: 0.92; transform: translateY(-1px); }
+  .btn-cyan { background: linear-gradient(135deg, #06b6d4, #0284c7); color: #fff; box-shadow: 0 4px 15px rgba(6, 182, 212, 0.28); }
+  .btn-cyan:hover { opacity: 0.92; transform: translateY(-1px); }
+  .btn-outline { background: rgba(139, 92, 246, 0.1); border: 1px solid var(--violet); color: var(--violet-light); }
+  .btn-outline:hover { background: rgba(139, 92, 246, 0.22); }
+  .btn-success { background: rgba(16, 185, 129, 0.12); border: 1px solid var(--emerald); color: var(--emerald); }
+  .btn-success:hover { background: rgba(16, 185, 129, 0.24); }
+  .btn-danger-outline { background: rgba(239, 68, 68, 0.15); border: 1px solid var(--danger); color: var(--danger); box-shadow: 0 0 18px rgba(239, 68, 68, 0.35); }
+  .btn-danger-outline:hover { background: rgba(239, 68, 68, 0.25); }
+
+  /* Panels & Grids */
+  .panel-box {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 18px;
+    padding: 22px;
+  }
+  .panel-gold { border-color: rgba(245, 158, 11, 0.45); box-shadow: 0 0 32px rgba(245, 158, 11, 0.08); }
+  .panel-violet { border-color: rgba(139, 92, 246, 0.45); box-shadow: 0 0 32px rgba(139, 92, 246, 0.08); }
+  .panel-emerald { border-color: rgba(16, 185, 129, 0.45); box-shadow: 0 0 32px rgba(16, 185, 129, 0.08); }
+  .panel-cyan { border-color: rgba(6, 182, 212, 0.45); box-shadow: 0 0 32px rgba(6, 182, 212, 0.08); }
+
+  .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 20px; }
+  .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
+
+  /* Catalog Cards */
+  .catalog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(305px, 1fr)); gap: 16px; }
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 16px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.22s;
+  }
+  .card:hover { border-color: rgba(245, 158, 11, 0.55); transform: translateY(-2px); box-shadow: 0 10px 26px rgba(245, 158, 11, 0.14); }
+  .card.mine { border-color: var(--gold); background: linear-gradient(180deg, #1a1333 0%, #130e1f 100%); }
+  .card.promoted { border-color: var(--cyan); box-shadow: 0 0 18px rgba(6, 182, 212, 0.16); }
+
+  .price-tag { font-size: 17px; font-weight: 900; color: var(--gold-light); }
+  .card-title { font-size: 14px; font-weight: 800; color: #fff; margin: 8px 0 4px 0; }
+  .essence-box {
+    background: var(--bg-deep);
+    border: 1px solid var(--border-subtle);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 11px;
+    color: var(--text-muted);
+    font-style: italic;
+    margin-top: 10px;
+  }
+
+  /* Forms */
+  .form-group { margin-bottom: 14px; }
+  .form-group label { display: block; font-size: 11px; color: var(--violet-light); font-weight: 700; margin-bottom: 6px; text-transform: uppercase; }
+  .form-control {
+    width: 100%;
+    background: var(--bg-deep);
+    border: 1px solid var(--border-subtle);
+    color: #fff;
+    padding: 11px 14px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-family: inherit;
+  }
+  .form-control:focus { outline: none; border-color: var(--cyan); }
+  textarea.form-control { resize: vertical; min-height: 95px; }
+
+  /* Propulsion Modes & Kinetic Gauge */
+  .mode-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(195px, 1fr)); gap: 12px; margin-bottom: 18px; }
+  .mode-card {
+    background: var(--bg-deep);
+    border: 1px solid var(--border-subtle);
+    border-radius: 14px;
+    padding: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: left;
+  }
+  .mode-card:hover { border-color: var(--violet); transform: translateY(-2px); }
+  .mode-card.active-mode {
+    border-color: var(--gold);
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.16), rgba(139, 92, 246, 0.16));
+    box-shadow: 0 0 20px rgba(245, 158, 11, 0.25);
+  }
+  .energy-bar-track {
+    width: 100%;
+    height: 12px;
+    background: var(--bg-deep);
+    border: 1px solid var(--border-subtle);
+    border-radius: 999px;
+    overflow: hidden;
+  }
+  .energy-bar-fill {
+    height: 100%;
+    width: 35%;
+    background: linear-gradient(90deg, var(--emerald), var(--cyan), var(--violet), var(--gold));
+    border-radius: 999px;
+    transition: width 0.35s ease;
+  }
+
+  /* Scout 500 LED Matrix */
+  .scout-500-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(22px, 1fr));
+    gap: 4px;
+    background: var(--bg-deep);
+    border: 1px solid var(--border-subtle);
+    border-radius: 14px;
+    padding: 12px;
+    max-height: 310px;
+    overflow-y: auto;
+  }
+  .scout-dot {
+    height: 18px;
+    border-radius: 4px;
+    background: rgba(16, 185, 129, 0.16);
+    border: 1px solid rgba(16, 185, 129, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 7px;
+    font-family: monospace;
+    color: #a7f3d0;
+    cursor: pointer;
+    transition: transform 0.15s, background 0.15s, border-color 0.15s;
+  }
+  .scout-dot:hover, .scout-dot.selected {
+    background: rgba(245, 158, 11, 0.35);
+    border-color: var(--gold);
+    color: #fff;
+    transform: scale(1.25);
+    z-index: 2;
+  }
+  .scout-dot.flash-ping {
+    background: rgba(6, 182, 212, 0.45);
+    border-color: var(--cyan);
+    box-shadow: 0 0 8px rgba(6, 182, 212, 0.6);
+  }
+
+  /* Multi-Agent Pipeline */
+  .pipeline-wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+    margin: 16px 0;
+  }
+  .pipe-step {
+    background: var(--bg-deep);
+    border: 1px solid var(--border-subtle);
+    border-radius: 14px;
+    padding: 15px;
+    transition: all 0.25s;
+  }
+  .pipe-step.active-stage {
+    border-color: var(--cyan);
+    box-shadow: 0 0 22px rgba(6, 182, 212, 0.22);
+    background: linear-gradient(135deg, rgba(6, 182, 212, 0.12), rgba(19, 14, 31, 0.96));
+  }
+
+  /* Logs & Addresses */
+  .log-panel {
+    background: var(--bg-deep);
+    border: 1px solid var(--border-subtle);
+    border-radius: 14px;
+    padding: 15px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 11px;
+    max-height: 280px;
+    overflow-y: auto;
+  }
+  .log-panel.propulsion-active { border-color: var(--gold); box-shadow: 0 0 24px rgba(245, 158, 11, 0.15) inset; }
+  .log-line { padding: 6px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.05); color: #cbd5e1; }
+  .log-line b { color: var(--gold-light); }
+
+  .sec-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid #1a1333;
+    padding-bottom: 11px;
+    margin-bottom: 11px;
+  }
+  .sec-row:last-child { border-bottom: none; padding-bottom: 0; margin-bottom: 0; }
+
+  .mono-addr {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    background: #050308;
+    border: 1px solid rgba(245, 158, 11, 0.4);
+    color: var(--gold-light);
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 11px;
+    word-break: break-all;
+  }
+
+  /* Modal & Scanner Overlay */
+  .overlay-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(5, 3, 8, 0.88);
+    backdrop-filter: blur(8px);
+    z-index: 120;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+  }
+  .modal-card {
+    background: var(--bg-card);
+    border: 1px solid var(--gold);
+    border-radius: 20px;
+    padding: 24px;
+    max-width: 560px;
+    width: 100%;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.75);
+  }
+  .scanner-bar-track { width: 100%; height: 6px; background: var(--border-subtle); border-radius: 999px; overflow: hidden; margin-top: 14px; }
+  .scanner-bar-fill { width: 0%; height: 100%; background: linear-gradient(90deg, var(--cyan), var(--violet), var(--gold)); transition: width 1.5s linear; }
+
+  /* Toast Notification System */
+  .toast-container {
+    position: fixed;
+    bottom: 18px;
+    right: 18px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    max-width: 390px;
+    width: calc(100vw - 36px);
+    pointer-events: none;
+  }
+  .toast {
+    pointer-events: auto;
+    background: rgba(19, 14, 31, 0.98);
+    border: 1px solid var(--violet);
+    border-left: 4px solid var(--emerald);
+    color: #fff;
+    padding: 12px 15px;
+    border-radius: 12px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.7);
+    font-size: 12px;
+    animation: toastIn 0.22s ease-out;
+  }
+  @keyframes toastIn { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+
+  @media (max-width: 680px) {
+    .header, .cloud-subbar { padding: 10px 14px; }
+    .container { padding: 14px; }
+    .hero { padding: 18px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- 1. TICKER LIVE EN CONTINU -->
+<div class="ticker-wrap">
+  <div class="ticker" id="ticker-content"></div>
+</div>
+
+<!-- 2. EN-TÊTE PRINCIPAL SYNCHRONISÉ -->
+<header class="header">
+  <div class="brand">
+    <div class="brand-icon">✨</div>
+    <div>
+      <div class="brand-title">Bourse <span>Nostalgie</span> <span style="font-size:10px;background:rgba(6,182,212,0.2);border:1px solid rgba(6,182,212,0.45);color:#67e8f9;padding:2px 8px;border-radius:999px;vertical-align:middle">GEMINI PRO v2.6</span></div>
+      <div class="brand-sub">
+        <span>👤 <b style="color:#fff">elbrirchi47@gmail.com</b></span>
+        <span style="color:#10b981">● Synchronisé</span>
+        <span style="color:#fbbf24;font-family:monospace">₿ bc1qlrpdh5...7kc0wk</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px">
+    <button id="btn-main-propulsion" class="btn btn-propulsion" style="padding:10px 16px;font-size:12px" onclick="togglePropulsion()">
+      ⚡ Activer Boost Ultra-Dynamique Propulsé
+    </button>
+    <button class="btn btn-outline" style="padding:10px 14px" onclick="exportFullHtmlFile()">
+      📥 Exporter HTML
+    </button>
+    <div style="background:#0a0710;border:1px solid #f59e0b;border-radius:12px;padding:6px 14px;text-align:right">
+      <div style="font-size:9px;color:#c4b5fd;font-weight:800;display:flex;align-items:center;justify-content:flex-end;gap:5px">
+        <span class="dot-live"></span> SOLDE VALEUR SPIN
+      </div>
+      <div style="color:#fbbf24;font-weight:900;font-size:16px" id="header-spin-balance">24 850.00 SPIN</div>
+      <div style="font-size:10px;color:#10b981;font-family:monospace" id="header-btc-eur-eq">≈ 0.248500 BTC • 21 619.50 €</div>
+    </div>
+  </div>
+</header>
+
+<!-- 3. SOUS-BARRE CLOUD GEMINI PRO & WALLET BITCOIN SEGWIT -->
+<div class="cloud-subbar">
+  <div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px">
+    <span class="pill-badge" style="border-color:rgba(16,185,129,0.55)">
+      <span class="dot-live"></span>
+      <strong style="color:#10b981">☁️ CLOUD GEMINI PRO : CONNECTÉ (v2.6 Neural Core)</strong>
+      <span style="color:#67e8f9;font-family:monospace" id="cloud-latency-badge">4ms</span>
+    </span>
+    <span class="pill-badge">
+      <span>₿ Réception SegWit :</span>
+      <code style="color:#fbbf24;font-weight:700">bc1qlrpdh5j94865zmv3tcldzqpzycle4z7m7kc0wk</code>
+      <button class="btn btn-success" style="padding:2px 8px;font-size:10px;border-radius:6px" onclick="copySegWitAddress()">📋 Copier l'adresse</button>
+    </span>
+  </div>
+  <div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px">
+    <span class="pill-badge" style="border-color:rgba(6,182,212,0.5)">
+      <span class="dot-live"></span>
+      <span>Connectés Réels :</span>
+      <strong style="color:#67e8f9" id="subbar-connected-count">512+ Pairs</strong>
+    </span>
+    <button class="btn btn-emerald" style="padding:5px 10px;font-size:11px" onclick="routeSpinToSegWit()">
+      ₿ Router SPIN → SegWit
+    </button>
+  </div>
+</div>
+
+<div class="container">
+  <!-- 4. TABLEAU DE BORD HERO & MÉTRIQUES TEMPS RÉEL -->
+  <section class="hero">
+    <div class="hero-top">
+      <div style="max-width:740px">
+        <div style="display:inline-flex;align-items:center;gap:6px;background:rgba(139,92,246,0.2);border:1px solid rgba(139,92,246,0.45);color:#c4b5fd;padding:4px 12px;border-radius:999px;font-size:11px;font-weight:800;margin-bottom:8px">
+          ☁️ PROPULSÉ PAR CLOUD GEMINI PRO • RÉSEAU SCOUT 500+ • DIFFUSION INTERNATIONALE
+        </div>
+        <h1 style="font-size:24px;font-weight:900;color:#fff;margin-bottom:6px;line-height:1.25">
+          Bourse Nostalgie — <span style="color:#f59e0b">Boost Ultra-Dynamique</span> & Valeur <span style="color:#06b6d4">SPIN</span> Mondiale
+        </h1>
+        <p style="color:#cbd5e1;font-size:13px">
+          Compte maître <b style="color:#fff">elbrirchi47@gmail.com</b> verrouillé sur le cœur neuronal <b>Cloud Gemini Pro v2.6</b>. Vos actifs et transactions <b>SPIN</b> sont propulsés à l'international et routés en continu vers <code style="color:#fbbf24">bc1qlrpdh5j94865zmv3tcldzqpzycle4z7m7kc0wk</code>.
+        </p>
+      </div>
+
+      <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+        <button class="btn btn-violet" style="padding:11px 16px" onclick="openMintModal()">
+          ✨ Titriser un Souvenir (Gemini Pro)
+        </button>
+        <button class="btn btn-cyan" style="padding:11px 16px" onclick="executeSpinTransaction(true)">
+          💎 Exécuter Transaction SPIN
+        </button>
+      </div>
+    </div>
+
+    <!-- 5 CARTES STATISTIQUES ANIMÉES -->
+    <div class="stats-grid">
+      <div class="stat-card" style="border-color:rgba(6,182,212,0.4)">
+        <div class="lbl">🌐 Connectés Réels (Live Global)</div>
+        <div class="val" style="color:#67e8f9" id="kpi-real-connected">512+</div>
+        <div class="sub" id="kpi-connected-sub">500 Scouts + 12 Hubs Internationaux</div>
+      </div>
+      <div class="stat-card" style="border-color:rgba(245,158,11,0.4)">
+        <div class="lbl">💎 Valeur Transaction Spin (24h)</div>
+        <div class="val" style="color:#fbbf24" id="kpi-spin-volume">4 892 400 SPIN</div>
+        <div class="sub" id="kpi-spin-btc-vol">Conversion : 48.9240 BTC • 1 428 Tx</div>
+      </div>
+      <div class="stat-card" style="border-color:rgba(139,92,246,0.45)">
+        <div class="lbl">⚡ Multiplicateur Boost Propulsé</div>
+        <div class="val" style="color:#c4b5fd" id="kpi-boost-mult">x1.5</div>
+        <div class="sub" id="kpi-boost-mode">Mode : Croisière (250ms)</div>
+      </div>
+      <div class="stat-card" style="border-color:rgba(16,185,129,0.4)">
+        <div class="lbl">🌍 Portée Internationale</div>
+        <div class="val" style="color:#10b981" id="kpi-intl-reach">48 pays, 6 continents</div>
+        <div class="sub" id="kpi-intl-audience">Audience : 184 500 investisseurs</div>
+      </div>
+      <div class="stat-card">
+        <div class="lbl">🧠 Mes Actifs Forgés (Gemini Pro)</div>
+        <div class="val" style="color:#fff" id="kpi-my-assets">4</div>
+        <div class="sub" id="kpi-auto-forged">Attribués à elbrirchi47@gmail.com</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. NAVIGATION PAR 6 ONGLETS COMPLETS -->
+  <nav class="tabs">
+    <button class="tab-btn active" onclick="switchTab('market', this)">📚 Marché Global Live</button>
+    <button class="tab-btn" onclick="switchTab('boost', this)">⚡ Boost Ultra-Dynamique & Créateur Auto</button>
+    <button class="tab-btn" onclick="switchTab('network', this)">🌐 Réseau Connecté Réel (Scout 500+ & Multi-Agents)</button>
+    <button class="tab-btn" onclick="switchTab('intl', this)">🌍 Promotion Internationale & Boost Viral</button>
+    <button class="tab-btn" onclick="switchTab('spin', this)">💎 Moteur Spin & Cloud Gemini Pro Analytics</button>
+    <button class="tab-btn" onclick="switchTab('wallet', this)">🔐 Wallet Web3 & Sécurité Cloud</button>
+  </nav>
+
+  <!-- ===================================================================== -->
+  <!-- ONGLET 1 : MARCHÉ GLOBAL LIVE -->
+  <!-- ===================================================================== -->
+  <section id="tab-market" class="tab-content">
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;margin-bottom:16px">
+      <div>
+        <h2 style="color:#fff;font-size:18px;font-weight:900">📚 Catalogue des Actifs Titrisés en Valeur SPIN (<span id="market-count">1 004</span> Actifs)</h2>
+        <div style="font-size:11px;color:#94a3b8">Évaluation continue par <b>Cloud Gemini Pro v2.6</b> • Échanges instantanés et boost international</div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center">
+        <button class="btn btn-primary" onclick="openMintModal()">✨ Titriser un souvenir</button>
+        <button class="btn btn-outline" id="mfilter-all" onclick="setMarketFilter('all')">Tous</button>
+        <button class="btn btn-outline" id="mfilter-mine" onclick="setMarketFilter('mine')">Mes Actifs (elbrirchi47)</button>
+        <button class="btn btn-outline" id="mfilter-boost" onclick="setMarketFilter('boost')">⚡ Boostés</button>
+        <select id="market-cat-select" class="form-control" style="width:160px;padding:8px 12px" onchange="renderMarket()">
+          <option value="ALL">Toutes catégories</option>
+          <option value="Épiphanie">Épiphanie</option>
+          <option value="Voyage">Voyage</option>
+          <option value="Intérieur">Traversée Intérieure</option>
+          <option value="Rencontre">Rencontre</option>
+        </select>
+        <input type="text" id="market-search" class="form-control" style="width:210px;padding:8px 14px;border-radius:999px" placeholder="Rechercher un actif SPIN..." oninput="renderMarket()"/>
+      </div>
+    </div>
+    <div class="catalog-grid" id="market-grid"></div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- ONGLET 2 : BOOST ULTRA-DYNAMIQUE & CRÉATEUR AUTO -->
+  <!-- ===================================================================== -->
+  <section id="tab-boost" class="tab-content" style="display:none">
+    <div class="grid-2" style="margin-bottom:20px">
+      <!-- Sélecteur de Puissance & Jauge Cinétique -->
+      <div class="panel-box panel-gold">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+          <h2 style="color:#fff;font-size:18px;font-weight:900">⚡ Sélecteur de Propulsion Ultra-Dynamique</h2>
+          <span style="background:rgba(245,158,11,0.2);color:#fbbf24;padding:3px 10px;border-radius:999px;font-size:10px;font-weight:800" id="propulsion-badge-state">EN VEILLE</span>
+        </div>
+        <p style="color:#94a3b8;font-size:12px;margin-bottom:16px">
+          Choisissez votre régime de propulsion. Plus la fréquence est élevée, plus le multiplicateur <b>SPIN</b> et la cadence de création <b>Cloud Gemini Pro</b> s'accélèrent.
+        </p>
+
+        <div class="mode-grid">
+          <div class="mode-card active-mode" id="mode-card-0" onclick="selectPropulsionMode(0)">
+            <div style="font-size:10px;color:#10b981;font-weight:800">RÉGIME 1 • 250ms</div>
+            <div style="font-size:15px;font-weight:900;color:#fff;margin:3px 0">🛸 Croisière</div>
+            <div style="font-size:12px;color:#fbbf24;font-weight:800">Multiplicateur x1.5</div>
+          </div>
+          <div class="mode-card" id="mode-card-1" onclick="selectPropulsionMode(1)">
+            <div style="font-size:10px;color:#06b6d4;font-weight:800">RÉGIME 2 • 80ms</div>
+            <div style="font-size:15px;font-weight:900;color:#fff;margin:3px 0">🚀 Turbo Propulsé</div>
+            <div style="font-size:12px;color:#fbbf24;font-weight:800">Multiplicateur x3.0</div>
+          </div>
+          <div class="mode-card" id="mode-card-2" onclick="selectPropulsionMode(2)">
+            <div style="font-size:10px;color:#c4b5fd;font-weight:800">RÉGIME 3 • 25ms</div>
+            <div style="font-size:15px;font-weight:900;color:#fff;margin:3px 0">⚡ Hyper-Propulsion</div>
+            <div style="font-size:12px;color:#fbbf24;font-weight:800">Multiplicateur x5.0</div>
+          </div>
+          <div class="mode-card" id="mode-card-3" onclick="selectPropulsionMode(3)">
+            <div style="font-size:10px;color:#ef4444;font-weight:800">RÉGIME 4 • 10ms MAX</div>
+            <div style="font-size:15px;font-weight:900;color:#fff;margin:3px 0">🔥 Overdrive Maximal</div>
+            <div style="font-size:12px;color:#fbbf24;font-weight:800">Multiplicateur x10.0</div>
+          </div>
+        </div>
+
+        <!-- Jauge Cinétique SVG + Barre Énergétique -->
+        <div style="background:#0a0710;border:1px solid #2d2447;border-radius:14px;padding:16px;margin-bottom:16px">
+          <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
+            <div style="flex:1;min-width:180px">
+              <div style="font-size:11px;color:#94a3b8;text-transform:uppercase;font-weight:700">Jauge Cinétique Cloud Gemini Pro</div>
+              <div style="font-size:24px;font-weight:900;color:#fff;margin:4px 0" id="kinetic-rpm-text">2 400 RPM</div>
+              <div style="font-size:12px;color:#67e8f9" id="kinetic-velocity-text">Vélocité Spin : 145.0 SPIN/sec • Charge Neural Core : 28%</div>
+            </div>
+            <svg width="150" height="86" viewBox="0 0 150 86" style="flex-shrink:0">
+              <path d="M 15 75 A 60 60 0 0 1 135 75" fill="none" stroke="#2d2447" stroke-width="12" stroke-linecap="round"/>
+              <path id="kinetic-arc" d="M 15 75 A 60 60 0 0 1 135 75" fill="none" stroke="url(#gaugeGrad)" stroke-width="12" stroke-linecap="round" stroke-dasharray="188.5" stroke-dashoffset="135"/>
+              <defs>
+                <linearGradient id="gaugeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#10b981"/>
+                  <stop offset="50%" stop-color="#06b6d4"/>
+                  <stop offset="100%" stop-color="#f59e0b"/>
+                </linearGradient>
+              </defs>
+              <text id="kinetic-gauge-mult" x="75" y="70" text-anchor="middle" fill="#fbbf24" font-size="18" font-weight="900">x1.5</text>
+            </svg>
+          </div>
+          <div style="margin-top:10px">
+            <div style="display:flex;justify-content:space-between;font-size:10px;color:#94a3b8;margin-bottom:4px">
+              <span>PUISSANCE ÉNERGÉTIQUE PROPULSÉE</span>
+              <span id="energy-pct-label">25%</span>
+            </div>
+            <div class="energy-bar-track">
+              <div class="energy-bar-fill" id="energy-bar-fill" style="width:25%"></div>
+            </div>
+          </div>
+        </div>
+
+        <button id="btn-boost-tab-toggle" class="btn btn-propulsion" style="width:100%;padding:14px;font-size:14px" onclick="togglePropulsion()">
+          ⚡ Démarrer la Propulsion Ultra-Dynamique
+        </button>
+      </div>
+
+      <!-- Créateur Automatisé Ultra-Rapide Cloud Gemini Pro -->
+      <div class="panel-box panel-violet">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+          <h2 style="color:#fff;font-size:18px;font-weight:900">🧠 Créateur Automatisé Ultra-Rapide</h2>
+          <span style="color:#10b981;font-size:11px;font-weight:800">● GEMINI PRO v2.6</span>
+        </div>
+        <p style="color:#94a3b8;font-size:12px;margin-bottom:14px">
+          Forge, évalue et cote automatiquement de nouveaux actifs émotionnels en <b>SPIN</b>, attribués instantanément à <b style="color:#fff">elbrirchi47@gmail.com</b>.
+        </p>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px">
+          <div style="background:#0a0710;border:1px solid #2d2447;border-radius:10px;padding:12px">
+            <div style="font-size:10px;color:#94a3b8;text-transform:uppercase">Actifs Auto-Forgés</div>
+            <div style="font-size:19px;font-weight:900;color:#c4b5fd" id="auto-forged-counter">2</div>
+          </div>
+          <div style="background:#0a0710;border:1px solid #2d2447;border-radius:10px;padding:12px">
+            <div style="font-size:10px;color:#94a3b8;text-transform:uppercase">Valeur Spin Générée</div>
+            <div style="font-size:19px;font-weight:900;color:#10b981" id="auto-forged-spin-val">6 600.00 SPIN</div>
+          </div>
+        </div>
+
+        <h4 style="color:#fbbf24;font-size:11px;text-transform:uppercase;margin-bottom:8px">Derniers Actifs Forgés Automatiquement :</h4>
+        <div class="log-panel" id="auto-creator-feed" style="max-height:245px"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- ONGLET 3 : RÉSEAU CONNECTÉ RÉEL (SCOUT 500+ & MULTI-AGENTS) -->
+  <!-- ===================================================================== -->
+  <section id="tab-network" class="tab-content" style="display:none">
+    <div class="panel-box panel-cyan" style="margin-bottom:20px">
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;margin-bottom:14px">
+        <div>
+          <h2 style="color:#fff;font-size:19px;font-weight:900">🌐 Réseau Connecté Réel — Matrice Scout 500+ & Pairs Mondiaux</h2>
+          <p style="color:#94a3b8;font-size:12px">
+            500 nœuds Scouts dédiés (<b>Scout-001</b> à <b>Scout-500</b>) + hubs internationaux synchronisés en temps réel sur <b>Paris, Tokyo, New York, Londres, Séoul, Dubaï, São Paulo, Singapour, Montréal, Berlin</b>.
+          </p>
+        </div>
+        <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+          <div style="background:#0a0710;border:1px solid #06b6d4;border-radius:12px;padding:8px 14px;text-align:center">
+            <div style="font-size:10px;color:#94a3b8">CONNECTÉS RÉELS ACTIFS</div>
+            <div style="font-size:18px;font-weight:900;color:#67e8f9" id="net-tab-connected">512+ Pairs</div>
+          </div>
+          <button class="btn btn-cyan" onclick="pingAll500Scouts()">⚡ Ping Global 500 Nœuds</button>
+        </div>
+      </div>
+
+      <!-- Pipeline Multi-Agents Autonomes en 4 Étapes -->
+      <h4 style="color:#fbbf24;font-size:11px;text-transform:uppercase;margin-bottom:8px">Pipeline Multi-Agents Autonomes (4 Étapes Synchronisées)</h4>
+      <div class="pipeline-wrap">
+        <div class="pipe-step active-stage" id="pipe-step-1">
+          <div style="font-size:10px;color:#06b6d4;font-weight:800">ÉTAPE 1 • DÉTECTION GLOBALE</div>
+          <div style="font-size:15px;font-weight:900;color:#fff;margin:4px 0">🛰️ Agent-Scout (500+ Nœuds)</div>
+          <div style="font-size:11px;color:#94a3b8">Balayage continu des 10 métropoles mondiales et détection des signaux émotionnels.</div>
+        </div>
+        <div class="pipe-step" id="pipe-step-2">
+          <div style="font-size:10px;color:#c4b5fd;font-weight:800">ÉTAPE 2 • ORCHESTRATION IA</div>
+          <div style="font-size:15px;font-weight:900;color:#fff;margin:4px 0">☁️ Agent-Manager (Gemini Pro)</div>
+          <div style="font-size:11px;color:#94a3b8">Calcul neuronal de la cote SPIN, pondération Boost et routage multi-hub.</div>
+        </div>
+        <div class="pipe-step" id="pipe-step-3">
+          <div style="font-size:10px;color:#fbbf24;font-weight:800">ÉTAPE 3 • CRÉATION & COTATION</div>
+          <div style="font-size:15px;font-weight:900;color:#fff;margin:4px 0">⚙️ Agent-Worker (Spin Engine)</div>
+          <div style="font-size:11px;color:#94a3b8">Titrisation ultra-rapide et exécution des ordres pour <b>elbrirchi47@gmail.com</b>.</div>
+        </div>
+        <div class="pipe-step" id="pipe-step-4">
+          <div style="font-size:10px;color:#10b981;font-weight:800">ÉTAPE 4 • VALIDATION SEGWIT</div>
+          <div style="font-size:15px;font-weight:900;color:#fff;margin:4px 0">🔐 Agent-Escrow (Web3 BTC)</div>
+          <div style="font-size:11px;color:#94a3b8">Signature SHA-256 et règlement vers <code style="color:#fbbf24">bc1qlrpdh5...7kc0wk</code>.</div>
+        </div>
+      </div>
+
+      <!-- Télémétrie du nœud sélectionné -->
+      <div style="background:#0a0710;border:1px solid #2d2447;border-radius:12px;padding:12px 16px;margin-bottom:14px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px">
+        <div>
+          <span style="color:#10b981;font-weight:800">● Nœud Inspecté :</span>
+          <strong style="color:#fff" id="insp-scout-name">Scout-001</strong> —
+          <span style="color:#67e8f9" id="insp-scout-city">Hub : Paris (EU-West)</span>
+        </div>
+        <div style="display:flex;gap:16px;font-family:monospace;font-size:12px">
+          <span>Ping : <b style="color:#10b981" id="insp-scout-ping">3ms</b></span>
+          <span>Statut : <b style="color:#fbbf24">VERROUILLÉ 100%</b></span>
+          <span>Paquets Spin : <b style="color:#fff" id="insp-scout-pkts">1 284</b></span>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div>
+          <div style="font-size:11px;color:#c4b5fd;font-weight:800;margin-bottom:6px">MATRICE INTERACTIVE DES 500 NŒUDS SCOUT (CLIQUEZ POUR INSPECTER)</div>
+          <div class="scout-500-grid" id="scout-500-matrix"></div>
+        </div>
+        <div>
+          <div style="font-size:11px;color:#67e8f9;font-weight:800;margin-bottom:6px">FLUX EN DIRECT DES CONNEXIONS INTERNATIONALES ENTRANTES</div>
+          <div class="log-panel" id="international-peers-feed" style="max-height:310px"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- ONGLET 4 : PROMOTION INTERNATIONALE & BOOST VIRAL -->
+  <!-- ===================================================================== -->
+  <section id="tab-intl" class="tab-content" style="display:none">
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;margin-bottom:18px">
+      <div>
+        <h2 style="color:#fff;font-size:19px;font-weight:900">🌍 Centre de Promotion Internationale & Diffusion Virale</h2>
+        <p style="color:#94a3b8;font-size:12px">Déployez vos campagnes sur 6 zones continentales et générez des messages multilingues liés à votre compte et adresse SegWit.</p>
+      </div>
+      <button class="btn btn-propulsion" style="padding:12px 20px;font-size:13px" onclick="launchAllInternationalRegions()">
+        🚀 Tout Propulser à l'International (6 Zones)
+      </button>
+    </div>
+
+    <!-- Compteurs Internationaux -->
+    <div class="grid-3" style="margin-bottom:20px">
+      <div class="stat-card" style="border-color:rgba(6,182,212,0.45)">
+        <div class="lbl">Audience Internationale Atteinte</div>
+        <div class="val" style="color:#67e8f9" id="promo-audience-val">184 500</div>
+        <div class="sub" id="promo-regions-active-sub">2 / 6 Zones Continentales Actives</div>
+      </div>
+      <div class="stat-card" style="border-color:rgba(16,185,129,0.45)">
+        <div class="lbl">Taux de Conversion Viral</div>
+        <div class="val" style="color:#10b981" id="promo-conv-rate">6.84%</div>
+        <div class="sub" id="promo-conv-count">12 619 acquisitions Spin générées</div>
+      </div>
+      <div class="stat-card" style="border-color:rgba(245,158,11,0.45)">
+        <div class="lbl">Gains Spin des Campagnes</div>
+        <div class="val" style="color:#fbbf24" id="promo-spin-gains">+9 420.00 SPIN</div>
+        <div class="sub">Routage automatique vers SegWit</div>
+      </div>
+    </div>
+
+    <!-- 6 Zones Mondiales -->
+    <div class="grid-3" style="margin-bottom:22px" id="intl-regions-grid"></div>
+
+    <!-- Générateur de Messages Promotionnels Multilingues -->
+    <div class="panel-box panel-violet">
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-bottom:12px">
+        <div>
+          <h3 style="color:#fff;font-size:16px;font-weight:900">🗣️ Générateur de Messages Promotionnels Multilingues & Lien Affilié</h3>
+          <div style="font-size:11px;color:#94a3b8">Intègre automatiquement <b>elbrirchi47@gmail.com</b> et l'adresse SegWit <b>bc1qlrpdh5j94865zmv3tcldzqpzycle4z7m7kc0wk</b></div>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px">
+          <button class="btn btn-outline" onclick="setPromoLang('fr')">🇫🇷 Français</button>
+          <button class="btn btn-outline" onclick="setPromoLang('en')">🇬🇧 English</button>
+          <button class="btn btn-outline" onclick="setPromoLang('ja')">🇯🇵 日本語</button>
+          <button class="btn btn-outline" onclick="setPromoLang('es')">🇪🇸 Español</button>
+          <button class="btn btn-outline" onclick="setPromoLang('ar')">🇸🇦 العربية</button>
+          <button class="btn btn-outline" onclick="setPromoLang('de')">🇩🇪 Deutsch</button>
+        </div>
+      </div>
+
+      <textarea id="multilingual-promo-output" class="form-control" readonly style="min-height:105px;font-size:12px;line-height:1.6;margin-bottom:12px"></textarea>
+      <div style="display:flex;flex-wrap:wrap;gap:10px">
+        <button class="btn btn-success" style="flex:1" onclick="copyMultilingualPromo()">
+          📋 Copier le Message Promotionnel & Lien Affilié
+        </button>
+        <button class="btn btn-primary" onclick="boostPromoCampaignEarnings()">
+          ⚡ Diffuser & Encaisser Bonus Viral (+350 SPIN)
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- ONGLET 5 : MOTEUR SPIN & CLOUD GEMINI PRO ANALYTICS -->
+  <!-- ===================================================================== -->
+  <section id="tab-spin" class="tab-content" style="display:none">
+    <div class="grid-2" style="margin-bottom:20px">
+      <!-- Calculateur Interactif SPIN <-> BTC <-> EUR & Exécution TXID -->
+      <div class="panel-box panel-gold">
+        <h2 style="color:#fff;font-size:18px;font-weight:900;margin-bottom:6px">💎 Calculateur & Exécuteur de Valeur de Transaction Spin</h2>
+        <p style="color:#94a3b8;font-size:12px;margin-bottom:14px">
+          Conversion temps réel <b>SPIN ↔ BTC ↔ EUR</b> (1 BTC = 100 000 SPIN • 1 BTC = 87 000 €) avec application du multiplicateur Boost propulsé.
+        </p>
+
+        <div class="form-group">
+          <label>Montant en Valeur SPIN</label>
+          <input type="number" id="calc-input-spin" class="form-control" value="1000" min="1" step="50" oninput="syncSpinConverter('spin')"/>
+        </div>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px">
+          <div class="form-group" style="margin-bottom:0">
+            <label>Équivalence Bitcoin (BTC)</label>
+            <input type="number" id="calc-input-btc" class="form-control" value="0.010000" step="0.001" oninput="syncSpinConverter('btc')"/>
+          </div>
+          <div class="form-group" style="margin-bottom:0">
+            <label>Équivalence Euro (EUR €)</label>
+            <input type="number" id="calc-input-eur" class="form-control" value="870.00" step="10" oninput="syncSpinConverter('eur')"/>
+          </div>
+        </div>
+
+        <div style="background:#0a0710;border:1px solid #2d2447;border-radius:12px;padding:14px;margin-bottom:14px">
+          <div class="sec-row">
+            <span style="color:#94a3b8">Multiplicateur Boost Actif :</span>
+            <strong style="color:#c4b5fd" id="spin-calc-mult">x1.5</strong>
+          </div>
+          <div class="sec-row">
+            <span style="color:#94a3b8">Bonus Réseau Scout 500+ :</span>
+            <strong style="color:#10b981">+25.0%</strong>
+          </div>
+          <div class="sec-row">
+            <span style="color:#fbbf24;font-weight:800">RENDEMENT NET TRANSACTION SPIN :</span>
+            <strong style="color:#fbbf24;font-size:19px;font-weight:900" id="spin-calc-net-result">1 875.00 SPIN</strong>
+          </div>
+        </div>
+
+        <div style="display:flex;flex-wrap:wrap;gap:10px">
+          <button class="btn btn-primary" style="flex:1;padding:13px" onclick="executeSpinTransaction(false)">
+            ⚡ Exécuter Transaction Spin (TXID SHA-256)
+          </button>
+          <button class="btn btn-emerald" style="padding:13px" onclick="routeSpinToSegWit()">
+            ₿ Router vers SegWit
+          </button>
+        </div>
+      </div>
+
+      <!-- Analyse Prédictive Cloud Gemini Pro -->
+      <div class="panel-box panel-cyan">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+          <h2 style="color:#fff;font-size:18px;font-weight:900">☁️ Analyse Prédictive Cloud Gemini Pro</h2>
+          <span style="color:#10b981;font-size:11px;font-weight:800">CONFIANCE 99.2%</span>
+        </div>
+        <p style="color:#94a3b8;font-size:12px;margin-bottom:12px">
+          Modélisation neuronale des secteurs émotionnels les plus rentables sur les hubs internationaux.
+        </p>
+
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px">
+          <div style="background:#0a0710;border:1px solid #2d2447;border-radius:10px;padding:10px;text-align:center">
+            <div style="font-size:9px;color:#94a3b8">TOP SECTEUR</div>
+            <div style="font-size:14px;font-weight:900;color:#fbbf24">Épiphanie</div>
+            <div style="font-size:10px;color:#10b981">+34.8% ROI</div>
+          </div>
+          <div style="background:#0a0710;border:1px solid #2d2447;border-radius:10px;padding:10px;text-align:center">
+            <div style="font-size:9px;color:#94a3b8">HUB LEADER</div>
+            <div style="font-size:14px;font-weight:900;color:#67e8f9">Tokyo / Paris</div>
+            <div style="font-size:10px;color:#10b981">Liquidité Max</div>
+          </div>
+          <div style="background:#0a0710;border:1px solid #2d2447;border-radius:10px;padding:10px;text-align:center">
+            <div style="font-size:9px;color:#94a3b8">ROUTAGE SEGWIT</div>
+            <div style="font-size:14px;font-weight:900;color:#10b981" id="analytics-routed-total">12 400 SPIN</div>
+            <div style="font-size:10px;color:#c4b5fd">bc1qlrpd...kc0wk</div>
+          </div>
+        </div>
+
+        <!-- Courbe SVG Prédictive -->
+        <div style="background:#0a0710;border:1px solid #2d2447;border-radius:12px;padding:12px;margin-bottom:12px">
+          <svg viewBox="0 0 560 110" style="width:100%;height:110px;display:block">
+            <defs>
+              <linearGradient id="geminiCurve" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.45"/>
+                <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.0"/>
+              </linearGradient>
+            </defs>
+            <path d="M0,92 Q90,82 180,62 T360,34 T560,10 L560,110 L0,110 Z" fill="url(#geminiCurve)"/>
+            <path d="M0,92 Q90,82 180,62 T360,34 T560,10" fill="none" stroke="#06b6d4" stroke-width="3"/>
+            <circle cx="180" cy="62" r="4" fill="#f59e0b"/>
+            <circle cx="360" cy="34" r="4" fill="#10b981"/>
+            <circle cx="560" cy="10" r="5" fill="#fbbf24"/>
+          </svg>
+        </div>
+
+        <div style="background:#0a0710;border:1px solid rgba(139,92,246,0.4);border-radius:10px;padding:11px;font-size:11px;color:#cbd5e1">
+          <b style="color:#c4b5fd">💡 Recommandation Gemini Pro :</b> Maintenez le régime <b>Hyper-Propulsion (25ms / x5.0)</b> ou <b>Overdrive (10ms / x10.0)</b> avec les 6 zones internationales activées pour maximiser les règlements SegWit.
+        </div>
+      </div>
+    </div>
+
+    <!-- Registre des Transactions Spin SHA-256 -->
+    <div class="panel-box">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+        <h3 style="color:#fff;font-weight:800">🧾 Historique des Transactions Spin (TXID SHA-256 & Routage SegWit)</h3>
+        <span style="font-size:11px;color:#10b981">Destination : bc1qlrpdh5j94865zmv3tcldzqpzycle4z7m7kc0wk</span>
+      </div>
+      <div class="log-panel" id="spin-tx-history" style="max-height:240px"></div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- ONGLET 6 : WALLET WEB3 & SÉCURITÉ CLOUD -->
+  <!-- ===================================================================== -->
+  <section id="tab-wallet" class="tab-content" style="display:none">
+    <div class="grid-2" style="max-width:1080px;margin:0 auto">
+      <div class="panel-box panel-gold">
+        <div style="text-align:center;font-size:36px;margin-bottom:6px">🔐</div>
+        <h2 style="color:#fff;font-size:20px;font-weight:900;text-align:center;margin-bottom:6px">Identité & Coffre-Fort Cloud Gemini Pro</h2>
+        <p style="color:#94a3b8;text-align:center;font-size:12px;margin-bottom:18px">
+          Synchronisation chiffrée permanente entre votre compte et votre portefeuille Bitcoin SegWit.
+        </p>
+
+        <div style="background:#0a0710;border:1px solid #2d2447;border-radius:12px;padding:16px;margin-bottom:16px">
+          <div class="sec-row">
+            <span style="color:#94a3b8;font-size:12px">Email Compte Principal</span>
+            <strong style="color:#fff;font-size:13px">elbrirchi47@gmail.com <span style="color:#10b981">● CONNECTÉ</span></strong>
+          </div>
+          <div class="sec-row">
+            <span style="color:#94a3b8;font-size:12px">Statut Cloud IA</span>
+            <strong style="color:#10b981;font-size:12px">☁️ CLOUD GEMINI PRO : CONNECTÉ (v2.6 Neural Core)</strong>
+          </div>
+          <div class="sec-row">
+            <span style="color:#94a3b8;font-size:12px">Clé Akshique de Récupération</span>
+            <strong style="color:#fbbf24;font-family:monospace;font-size:13px">BR-NOST-88X2-99L4-ZZQ1</strong>
+          </div>
+          <div class="sec-row">
+            <span style="color:#94a3b8;font-size:12px">Solde Spin Synchronisé</span>
+            <strong style="color:#10b981;font-size:15px" id="wallet-tab-spin-bal">24 850.00 SPIN</strong>
+          </div>
+          <div class="sec-row">
+            <span style="color:#94a3b8;font-size:12px">Total Routé vers SegWit</span>
+            <strong style="color:#67e8f9;font-size:13px" id="wallet-tab-routed-bal">12 400.00 SPIN (0.124000 BTC)</strong>
+          </div>
+        </div>
+
+        <button class="btn btn-success" style="width:100%;padding:13px;font-size:13px" onclick="downloadCredentialsFile()">
+          📥 Télécharger le Fichier d'Identifiants Sécurisés (.txt)
+        </button>
+      </div>
+
+      <div class="panel-box panel-violet">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+          <h2 style="color:#fff;font-size:19px;font-weight:900">₿ Adresse Bitcoin SegWit Synchronisée</h2>
+          <span style="background:rgba(16,185,129,0.2);color:#10b981;padding:4px 10px;border-radius:999px;font-size:10px;font-weight:800">ROUTAGE ACTIF</span>
+        </div>
+        <p style="color:#94a3b8;font-size:12px;margin-bottom:14px">
+          Scannez ou copiez votre adresse Bech32 Native SegWit pour recevoir vos conversions SPIN :
+        </p>
+
+        <div style="display:flex;flex-direction:column;align-items:center;background:#0a0710;border:1px solid rgba(245,158,11,0.45);border-radius:14px;padding:16px;margin-bottom:14px">
+          <div id="segwit-qr-box" style="background:#ffffff;padding:10px;border-radius:12px;box-shadow:0 0 24px rgba(245,158,11,0.3);margin-bottom:12px"></div>
+          <div class="mono-addr" style="text-align:center;width:100%;margin-bottom:12px">
+            bc1qlrpdh5j94865zmv3tcldzqpzycle4z7m7kc0wk
+          </div>
+          <div style="display:flex;gap:8px;width:100%;flex-wrap:wrap">
+            <button class="btn btn-outline" style="flex:1" onclick="copySegWitAddress()">📋 Copier l'adresse</button>
+            <button class="btn btn-emerald" style="flex:1" onclick="routeSpinToSegWit()">₿ Router SPIN Maintenant</button>
+          </div>
+        </div>
+
+        <div style="font-size:11px;color:#94a3b8;text-align:center">
+          Protocole : <b style="color:#fff">BIP-84 Native SegWit</b> • Vérification SHA-256 par Agent-Escrow
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. REGISTRE AKSHIQUE & LOGS LIVE EN CONTINU (BAS DE PAGE) -->
+  <section class="panel-box" style="margin-top:24px;border-color:rgba(139,92,246,0.4)">
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-bottom:12px">
+      <div style="display:flex;align-items:center;gap:8px">
+        <span class="dot-live"></span>
+        <h3 style="color:#fff;font-size:15px;font-weight:900">📜 Registre Akshique & Flux Live en Continu</h3>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:6px">
+        <button class="btn btn-outline" style="padding:4px 10px;font-size:11px" onclick="setLogFilter('ALL')">Tout</button>
+        <button class="btn btn-outline" style="padding:4px 10px;font-size:11px" onclick="setLogFilter('SPIN')">💎 Transactions Spin</button>
+        <button class="btn btn-outline" style="padding:4px 10px;font-size:11px" onclick="setLogFilter('CLOUD')">🧠 Créations Gemini Pro</button>
+        <button class="btn btn-outline" style="padding:4px 10px;font-size:11px" onclick="setLogFilter('INTL')">🌍 Connexions & Boosts</button>
+      </div>
+    </div>
+    <div class="log-panel" id="global-akashic-logs"></div>
+  </section>
+</div>
+
+<!-- MODAL DE TITRISATION AVEC SCANNER IA CLOUD GEMINI PRO -->
+<div class="overlay-backdrop" id="mint-modal">
+  <div class="modal-card">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+      <h3 style="color:#fff;font-size:18px;font-weight:900">✨ Titriser un Souvenir via Cloud Gemini Pro</h3>
+      <button class="btn btn-danger-outline" style="padding:4px 10px" onclick="closeMintModal()">✕</button>
+    </div>
+    <p style="color:#94a3b8;font-size:12px;margin-bottom:14px">
+      L'actif sera évalué en <b>SPIN</b> par le moteur neuronal v2.6 et attribué à <b style="color:#fff">elbrirchi47@gmail.com</b>.
+    </p>
+
+    <div class="form-group">
+      <label>Titre de l'Expérience Humaine</label>
+      <input type="text" id="mint-title-input" class="form-control" placeholder="ex: Lever de soleil sur le Mont Fuji..."/>
+    </div>
+    <div class="form-group">
+      <label>Catégorie Émotionnelle</label>
+      <select id="mint-cat-input" class="form-control">
+        <option value="Épiphanie">Épiphanie</option>
+        <option value="Voyage">Voyage</option>
+        <option value="Intérieur">Traversée Intérieure</option>
+        <option value="Rencontre">Rencontre</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Récit & Profondeur Émotionnelle</label>
+      <textarea id="mint-desc-input" class="form-control" placeholder="Décrivez l'intensité et la transformation vécue..."></textarea>
+    </div>
+
+    <div id="gemini-scanner-box" style="display:none;background:#0a0710;border:1px solid #06b6d4;border-radius:12px;padding:12px;margin-bottom:14px">
+      <div style="color:#67e8f9;font-weight:800;font-size:12px">☁️ Analyse neuronale Cloud Gemini Pro en cours...</div>
+      <div class="scanner-bar-track"><div class="scanner-bar-fill" id="gemini-scanner-fill"></div></div>
+    </div>
+
+    <button class="btn btn-propulsion" style="width:100%;padding:13px;font-size:13px" onclick="submitGeminiMint()">
+      🧠 Lancer l'Évaluation IA & Introduire en Bourse
+    </button>
+  </div>
+</div>
+
+<!-- CONTENEUR DE TOASTS -->
+<div class="toast-container" id="toast-container"></div>
+
+<script>
+// ============================================================================
+// 1. CONSTANTES DE SYNCHRONISATION & ÉTAT CENTRAL
+// ============================================================================
+const ACCOUNT = {
+  email: "elbrirchi47@gmail.com",
+  segwit: "bc1qlrpdh5j94865zmv3tcldzqpzycle4z7m7kc0wk",
+  akshicKey: "BR-NOST-88X2-99L4-ZZQ1",
+  spinPerBtc: 100000,
+  eurPerBtc: 87000
+};
+
+const PROPULSION_MODES = [
+  { name: "Croisière", ms: 250, mult: 1.5, rpm: 2400, load: 25, dashOffset: 135 },
+  { name: "Turbo Propulsé", ms: 80, mult: 3.0, rpm: 5800, load: 55, dashOffset: 85 },
+  { name: "Hyper-Propulsion", ms: 25, mult: 5.0, rpm: 9600, load: 80, dashOffset: 40 },
+  { name: "Overdrive Maximal", ms: 10, mult: 10.0, rpm: 14800, load: 100, dashOffset: 0 }
+];
+
+const WORLD_CITIES = [
+  { city: "Paris", zone: "EU-West", flag: "🇫🇷" },
+  { city: "Tokyo", zone: "AP-Northeast", flag: "🇯🇵" },
+  { city: "New York", zone: "US-East", flag: "🇺🇸" },
+  { city: "Londres", zone: "EU-North", flag: "🇬🇧" },
+  { city: "Séoul", zone: "AP-East", flag: "🇰🇷" },
+  { city: "Dubaï", zone: "ME-Central", flag: "🇦🇪" },
+  { city: "São Paulo", zone: "SA-East", flag: "🇧🇷" },
+  { city: "Singapour", zone: "AP-South", flag: "🇸🇬" },
+  { city: "Montréal", zone: "CA-Central", flag: "🇨🇦" },
+  { city: "Berlin", zone: "EU-Central", flag: "🇩🇪" }
+];
+
+const state = {
+  spinBalance: 24850.00,
+  routedSpin: 12400.00,
+  spinVolume24h: 4892400,
+  txCount24h: 1428,
+  realConnected: 512,
+  countriesCount: 48,
+  myAssetsCount: 4,
+  autoForgedCount: 2,
+  autoForgedSpinTotal: 6600.00,
+  propulsionActive: false,
+  modeIndex: 0,
+  timerId: null,
+  pipelineStage: 1,
+  selectedScoutId: 1,
+  marketFilter: "all",
+  logFilter: "ALL",
+  promoLang: "fr",
+  promoAudience: 184500,
+  promoConversions: 12619,
+  promoSpinGains: 9420.00,
+  regions: [
+    { id: "eu", name: "Europe (Paris, Londres, Berlin)", reach: 54200, multBonus: 0.25, active: true },
+    { id: "ap", name: "Asie-Pacifique (Tokyo, Séoul, Singapour)", reach: 68400, multBonus: 0.35, active: true },
+    { id: "na", name: "Amérique du Nord (New York, Montréal)", reach: 49800, multBonus: 0.30, active: false },
+    { id: "me", name: "Moyen-Orient (Dubaï, Riyad)", reach: 38900, multBonus: 0.30, active: false },
+    { id: "la", name: "Amérique Latine (São Paulo, Buenos Aires)", reach: 31500, multBonus: 0.20, active: false },
+    { id: "af", name: "Afrique & Global Web3 (Casablanca, Lagos, Nairobi)", reach: 41700, multBonus: 0.25, active: false }
+  ]
+};
+
+const dirty = {
+  kpis: true,
+  market: false,
+  boost: true,
+  network: true,
+  intl: true,
+  spin: true,
+  logs: true
+};
+
+// ============================================================================
+// 2. UTILITAIRES DE FORMATAGE, SÉCURITÉ, COPIE & TOASTS
+// ============================================================================
+function fmtSpin(num, dec = 2) {
+  const fixed = Number(num || 0).toFixed(dec);
+  const parts = fixed.split(".");
+  parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+  return dec > 0 ? parts.join(".") : parts[0];
+}
+
+function fmtInt(num) {
+  return Math.floor(Number(num || 0)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+}
+
+function esc(str) {
+  return String(str || "").replace(/[&<>'"]/g, c => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#39;", '"': "&quot;"
+  }[c]));
+}
+
+function showToast(title, body, accent = "#10b981") {
+  const box = document.getElementById("toast-container");
+  if (!box) return;
+  const el = document.createElement("div");
+  el.className = "toast";
+  el.style.borderLeftColor = accent;
+  el.innerHTML = `<div style="font-weight:900;color:#fbbf24;margin-bottom:2px">${title}</div><div style="color:#e2e8f0">${body}</div>`;
+  box.appendChild(el);
+  setTimeout(() => {
+    el.style.opacity = "0";
+    el.style.transform = "translateY(10px)";
+    el.style.transition = "all 0.22s ease";
+    setTimeout(() => el.remove(), 240);
+  }, 3600);
+}
+
+function copySafe(text, label) {
+  const ta = document.createElement("textarea");
+  ta.value = text;
+  ta.style.position = "fixed";
+  ta.style.left = "-9999px";
+  document.body.appendChild(ta);
+  ta.focus();
+  ta.select();
+  try {
+    document.execCommand("copy");
+    showToast("📋 Copié avec succès", `${label} :<br><code style="color:#10b981;word-break:break-all">${esc(text)}</code>`, "#10b981");
+  } catch (e) {
+    showToast("⚠️ Copie manuelle", esc(text), "#f59e0b");
+  }
+  document.body.removeChild(ta);
+}
+
+function copySegWitAddress() {
+  copySafe(ACCOUNT.segwit, "Adresse Bitcoin SegWit");
+}
+
+function fakeSha256Txid() {
+  const hex = "0123456789abcdef";
+  let out = "";
+  for (let i = 0; i < 64; i++) out += hex[Math.floor(Math.random() * 16)];
+  return out;
+}
+
+function getEffectiveMultiplier() {
+  const baseMult = PROPULSION_MODES[state.modeIndex].mult;
+  const intlBonus = state.regions.reduce((acc, r) => acc + (r.active ? r.multBonus : 0), 0);
+  return Number((baseMult + intlBonus).toFixed(2));
+}
+
+// ============================================================================
+// 3. QR CODE SVG VECTORIEL SEGWIT
+// ============================================================================
+function buildSegWitQRCode() {
+  const container = document.getElementById("segwit-qr-box");
+  if (!container) return;
+  const n = 25;
+  const cell = 5;
+  const addr = ACCOUNT.segwit;
+  let rects = "";
+
+  function finderAt(r, c) {
+    const tl = r < 7 && c < 7;
+    const tr = r < 7 && c >= n - 7;
+    const bl = r >= n - 7 && c < 7;
+    if (!tl && !tr && !bl) return null;
+    const lr = r >= n - 7 ? r - (n - 7) : r;
+    const lc = c >= n - 7 ? c - (n - 7) : c;
+    if (lr === 0 || lr === 6 || lc === 0 || lc === 6) return true;
+    if (lr >= 2 && lr <= 4 && lc >= 2 && lc <= 4) return true;
+    return false;
+  }
+
+  for (let r = 0; r < n; r++) {
+    for (let c = 0; c < n; c++) {
+      const f = finderAt(r, c);
+      let dark = f !== null ? f : ((r === 6 || c === 6) ? (r + c) % 2 === 0 : ((addr.charCodeAt((r * n + c) % addr.length) * (r + 5) + c * 13) % 11 < 5));
+      if (dark) {
+        rects += `<rect x="${c * cell}" y="${r * cell}" width="${cell}" height="${cell}" fill="#0a0710"/>`;
+      }
+    }
+  }
+
+  container.innerHTML = `
+    <svg width="${n * cell}" height="${n * cell}" viewBox="0 0 ${n * cell} ${n * cell}" xmlns="http://www.w3.org/2000/svg">
+      <rect width="100%" height="100%" fill="#ffffff"/>
+      ${rects}
+      <rect x="47" y="47" width="31" height="31" rx="7" fill="#f59e0b"/>
+      <text x="62.5" y="68" text-anchor="middle" font-size="17" font-weight="900" fill="#0a0710" font-family="Arial">₿</text>
+    </svg>
+  `;
+}
+
+// ============================================================================
+// 4. BIBLIOTHÈQUE DES 1000+ ACTIFS & FLUX DE LOGS
+// ============================================================================
+const nouns = ["Éveil", "Traversée", "Ascension", "Rencontre", "Silence", "Horizon", "Sourire", "Odyssée", "Sérénité", "Lumière", "Mémoire", "Éclat", "Vertige", "Harmonie", "Aurore"];
+const places = ["à Tokyo", "dans l'Himalaya", "sous les Étoiles", "à Paris", "face à l'Océan", "à Séoul", "dans le Désert", "à Montréal", "au Crépuscule", "à Singapour", "sous la Pluie", "à Berlin"];
+const descriptions = [
+  "Connexion immédiate avec l'instant présent, évaluée à haute densité émotionnelle par Cloud Gemini Pro.",
+  "Transformation intérieure durable générant un rendement Spin récurrent sur les hubs internationaux.",
+  "Épiphanie lumineuse partagée à travers les continents, certifiée sur le registre Akshique.",
+  "Souvenir rare à haute liquidité Spin recherché par les pairs connectés de Tokyo et Paris."
+];
+const cats = ["Épiphanie", "Voyage", "Intérieur", "Rencontre"];
+const peers = ["Gemini_Node_01", "Tokyo_Soul", "Paris_Vault", "Seoul_Alpha", "NY_Quantum", "Dubai_Oracle", "Berlin_Pulse"];
+
+const assets = [
+  { id: "MY-1", title: "Méditation face à l'Océan ✨", category: "Intérieur", spinPrice: 4500, owner: ACCOUNT.email, isMine: true, boosted: true, desc: descriptions[0] },
+  { id: "MY-2", title: "Sourire d'un inconnu à Tokyo", category: "Rencontre", spinPrice: 2100, owner: ACCOUNT.email, isMine: true, boosted: false, desc: descriptions[1] },
+  { id: "MY-3", title: "Aurore Boréale & Clarté", category: "Épiphanie", spinPrice: 5400, owner: ACCOUNT.email, isMine: true, boosted: true, desc: descriptions[2] },
+  { id: "MY-4", title: "Nuit Étoilée dans le Sahara", category: "Voyage", spinPrice: 3800, owner: ACCOUNT.email, isMine: true, boosted: false, desc: descriptions[3] }
+];
+
+for (let i = 0; i < 1000; i++) {
+  const title = nouns[i % nouns.length] + " " + places[(i * 5) % places.length] + (i % 9 === 0 ? " ✨" : "");
+  assets.push({
+    id: "ACT-" + i,
+    title,
+    category: cats[i % cats.length],
+    spinPrice: 650 + ((i * 149) % 8200) + (i % 9 === 0 ? 4000 : 0),
+    owner: peers[i % peers.length],
+    isMine: false,
+    boosted: i % 14 === 0,
+    desc: descriptions[i % descriptions.length]
+  });
+}
+
+const akashicLogs = [];
+const autoForgedFeed = [];
+const spinTxHistory = [];
+const intlIncomingFeed = [];
+
+function pushLog(type, html) {
+  const t = new Date().toLocaleTimeString("fr-FR");
+  akashicLogs.unshift({ type, html: `<span style="color:#64748b">[${t}]</span> ${html}` });
+  if (akashicLogs.length > 70) akashicLogs.pop();
+  dirty.logs = true;
+}
+
+// ============================================================================
+// 5. MATRICE DES 500 NŒUDS SCOUT & RÉSEAU INTERNATIONAL
+// ============================================================================
+const scouts500 = Array.from({ length: 500 }, (_, i) => {
+  const hub = WORLD_CITIES[i % WORLD_CITIES.length];
+  return {
+    id: i + 1,
+    code: "Scout-" + String(i + 1).padStart(3, "0"),
+    city: hub.city,
+    zone: hub.zone,
+    flag: hub.flag,
+    ping: 2 + (i % 6),
+    packets: 950 + ((i * 19) % 800)
+  };
+});
+
+function buildScout500Matrix() {
+  const container = document.getElementById("scout-500-matrix");
+  if (!container) return;
+  container.innerHTML = scouts500.map(s =>
+    `<div class="scout-dot ${s.id === state.selectedScoutId ? "selected" : ""}" id="sdot-${s.id}" onclick="inspectScout(${s.id})" title="${s.code} • ${s.city} (${s.ping}ms)">${s.id}</div>`
+  ).join("");
+}
+
+function inspectScout(id) {
+  const prev = document.getElementById("sdot-" + state.selectedScoutId);
+  if (prev) prev.classList.remove("selected");
+  state.selectedScoutId = id;
+  const curr = document.getElementById("sdot-" + id);
+  if (curr) curr.classList.add("selected");
+
+  const s = scouts500[id - 1];
+  if (!s) return;
+  document.getElementById("insp-scout-name").textContent = s.code;
+  document.getElementById("insp-scout-city").textContent = `Hub : ${s.flag} ${s.city} (${s.zone})`;
+  document.getElementById("insp-scout-ping").textContent = s.ping + "ms";
+  document.getElementById("insp-scout-pkts").textContent = fmtInt(s.packets);
+}
+
+function pingAll500Scouts() {
+  scouts500.forEach(s => {
+    s.ping = 2 + Math.floor(Math.random() * 6);
+    s.packets += 12;
+  });
+  state.realConnected += 5;
+  inspectScout(state.selectedScoutId);
+  dirty.kpis = true;
+  pushLog("INTL", `🛰️ <b style="color:#67e8f9">PING GLOBAL SCOUT 500+</b> : 500/500 nœuds synchronisés (<8ms) • ${fmtInt(state.realConnected)}+ connectés réels.`);
+  showToast("🛰️ Matrice Scout 500+ Synchronisée", "500/500 nœuds vérifiés avec latence moyenne de 4ms.", "#06b6d4");
+}
+
+// ============================================================================
+// 6. BOOST ULTRA-DYNAMIQUE PROPULSÉ & CRÉATEUR AUTOMATISÉ GEMINI PRO
+// ============================================================================
+function selectPropulsionMode(idx) {
+  state.modeIndex = idx;
+  for (let i = 0; i < 4; i++) {
+    const card = document.getElementById("mode-card-" + i);
+    if (card) card.classList.toggle("active-mode", i === idx);
+  }
+  if (state.propulsionActive) {
+    clearInterval(state.timerId);
+    state.timerId = setInterval(propulsionTick, PROPULSION_MODES[idx].ms);
+  }
+  dirty.kpis = true;
+  dirty.boost = true;
+  dirty.spin = true;
+  const m = PROPULSION_MODES[idx];
+  pushLog("INTL", `⚡ <b style="color:#fbbf24">RÉGIME PROPULSION</b> : <b>${m.name} (${m.ms}ms)</b> sélectionné — Multiplicateur actif <b>x${getEffectiveMultiplier().toFixed(2)}</b>.`);
+}
+
+function togglePropulsion() {
+  state.propulsionActive = !state.propulsionActive;
+  const mode = PROPULSION_MODES[state.modeIndex];
+  const mainBtn = document.getElementById("btn-main-propulsion");
+  const tabBtn = document.getElementById("btn-boost-tab-toggle");
+  const logBox = document.getElementById("global-akashic-logs");
+
+  if (state.propulsionActive) {
+    if (mainBtn) {
+      mainBtn.innerHTML = "🛑 Stopper Boost Ultra-Dynamique";
+      mainBtn.className = "btn btn-danger-outline";
+    }
+    if (tabBtn) {
+      tabBtn.innerHTML = "🛑 Arrêter la Propulsion Ultra-Dynamique";
+      tabBtn.className = "btn btn-danger-outline";
+    }
+    if (logBox) logBox.classList.add("propulsion-active");
+
+    state.timerId = setInterval(propulsionTick, mode.ms);
+    pushLog("CLOUD", `🚀 <b style="color:#10b981">BOOST ULTRA-DYNAMIQUE PROPULSÉ ACTIVÉ</b> (${mode.name} • ${mode.ms}ms • Multiplicateur x${getEffectiveMultiplier().toFixed(2)}) via <b>Cloud Gemini Pro v2.6</b>.`);
+    showToast("🚀 Boost Ultra-Dynamique Activé", `Régime <b>${mode.name} (${mode.ms}ms)</b> • Multiplicateur <b>x${getEffectiveMultiplier().toFixed(2)}</b>`, "#f59e0b");
+  } else {
+    clearInterval(state.timerId);
+    if (mainBtn) {
+      mainBtn.innerHTML = "⚡ Activer Boost Ultra-Dynamique Propulsé";
+      mainBtn.className = "btn btn-propulsion";
+    }
+    if (tabBtn) {
+      tabBtn.innerHTML = "⚡ Démarrer la Propulsion Ultra-Dynamique";
+      tabBtn.className = "btn btn-propulsion";
+    }
+    if (logBox) logBox.classList.remove("propulsion-active");
+
+    pushLog("CLOUD", `⏸️ <b>Propulsion Ultra-Dynamique mise en veille.</b>`);
+    showToast("⏸️ Propulsion en Pause", "Le moteur autonome est en attente.", "#8b5cf6");
+  }
+  dirty.boost = true;
+  dirty.kpis = true;
+}
+
+function propulsionTick() {
+  state.pipelineStage = (state.pipelineStage % 4) + 1;
+  const effMult = getEffectiveMultiplier();
+
+  // Flash visuel léger sur un nœud Scout aléatoire
+  const randId = 1 + Math.floor(Math.random() * 500);
+  const sObj = scouts500[randId - 1];
+  sObj.packets += 1;
+  const dotEl = document.getElementById("sdot-" + randId);
+  if (dotEl) {
+    dotEl.classList.add("flash-ping");
+    setTimeout(() => dotEl.classList.remove("flash-ping"), 180);
+  }
+
+  // Croissance des connectés réels
+  if (Math.random() < 0.35) {
+    state.realConnected += 1;
+  }
+
+  const r = Math.random();
+  if (r < 0.42) {
+    // 1. Créateur Automatisé Cloud Gemini Pro
+    const title = nouns[Math.floor(Math.random() * nouns.length)] + " " + places[Math.floor(Math.random() * places.length)] + (Math.random() > 0.7 ? " ✨" : "");
+    const cat = cats[Math.floor(Math.random() * cats.length)];
+    const spinVal = Math.round((1400 + Math.random() * 4800) * (1 + effMult * 0.12));
+
+    const newAsset = {
+      id: "AUTO-" + Date.now() + "-" + Math.floor(Math.random() * 9999),
+      title,
+      category: cat,
+      spinPrice: spinVal,
+      owner: ACCOUNT.email,
+      isMine: true,
+      boosted: true,
+      desc: descriptions[Math.floor(Math.random() * descriptions.length)]
+    };
+    assets.unshift(newAsset);
+    if (assets.length > 1500) assets.pop();
+
+    state.myAssetsCount += 1;
+    state.autoForgedCount += 1;
+    state.autoForgedSpinTotal += spinVal;
+
+    autoForgedFeed.unshift({ title, cat, spinVal, time: new Date().toLocaleTimeString("fr-FR") });
+    if (autoForgedFeed.length > 35) autoForgedFeed.pop();
+
+    if (state.autoForgedCount % 3 === 1) {
+      pushLog("CLOUD", `🧠 <b style="color:#c4b5fd">GEMINI PRO AUTO-CRÉATEUR</b> : « <i>${esc(title)}</i> » [${cat}] forgé pour <b>${ACCOUNT.email}</b> (${fmtInt(spinVal)} SPIN).`);
+    }
+    dirty.market = true;
+    dirty.boost = true;
+  } else if (r < 0.82) {
+    // 2. Transaction SPIN propulsée
+    const target = assets[Math.floor(Math.random() * Math.min(50, assets.length))];
+    const gainSpin = Number(((85 + Math.random() * 190) * effMult).toFixed(2));
+    const txid = fakeSha256Txid();
+
+    state.spinBalance += gainSpin;
+    state.spinVolume24h += gainSpin;
+    state.txCount24h += 1;
+
+    if (state.txCount24h % 2 === 0) {
+      spinTxHistory.unshift({ txid, title: target.title, amount: gainSpin, mult: effMult, time: new Date().toLocaleTimeString("fr-FR") });
+      if (spinTxHistory.length > 40) spinTxHistory.pop();
+      pushLog("SPIN", `💎 <b style="color:#fbbf24">TX SPIN PROPULSÉE</b> : <b>+${fmtSpin(gainSpin)} SPIN</b> (x${effMult.toFixed(2)}) • Hash <code>${txid.slice(0, 14)}…</code>`);
+      dirty.spin = true;
+    }
+
+    // Auto-routage périodique vers SegWit
+    if (state.txCount24h % 30 === 0 && state.spinBalance > 5000) {
+      const routed = Number((state.spinBalance * 0.2).toFixed(2));
+      state.spinBalance -= routed;
+      state.routedSpin += routed;
+      pushLog("SPIN", `₿ <b style="color:#10b981">AUTO-ROUTAGE SEGWIT</b> : ${fmtSpin(routed)} SPIN transférés vers <code>${ACCOUNT.segwit}</code>.`);
+    }
+  } else {
+    // 3. Connexion internationale entrante
+    const hub = WORLD_CITIES[Math.floor(Math.random() * WORLD_CITIES.length)];
+    const spinFlow = Math.round(450 + Math.random() * 2900);
+    state.promoAudience += 140;
+    state.promoConversions += 4;
+    state.promoSpinGains += Number((spinFlow * 0.08).toFixed(2));
+
+    intlIncomingFeed.unshift({
+      hub: `${hub.flag} ${hub.city} (${hub.zone})`,
+      spinFlow,
+      time: new Date().toLocaleTimeString("fr-FR")
+    });
+    if (intlIncomingFeed.length > 35) intlIncomingFeed.pop();
+
+    if (Math.random() < 0.35) {
+      pushLog("INTL", `🌍 <b style="color:#67e8f9">CONNEXION INTERNATIONALE</b> : Hub <b>${hub.flag} ${hub.city}</b> synchronisé (+${fmtInt(spinFlow)} SPIN de liquidité).`);
+    }
+    dirty.intl = true;
+  }
+
+  dirty.kpis = true;
+  dirty.network = true;
+}
+
+// ============================================================================
+// 7. PROMOTION INTERNATIONALE & MESSAGES MULTILINGUES
+// ============================================================================
+const PROMO_TEMPLATES = {
+  fr: `✨ Rejoignez Bourse Nostalgie propulsée par Cloud Gemini Pro v2.6 ! Échangez des actifs émotionnels en valeur SPIN avec le réseau Scout 500+ connecté en continu.\n👤 Compte : elbrirchi47@gmail.com\n₿ Wallet Bitcoin SegWit : bc1qlrpdh5j94865zmv3tcldzqpzycle4z7m7kc0wk\n🔗 Lien direct : https://bourse-nostalgie.web3/intl?ref=elbrirchi47@gmail.com&segwit=bc1qlrpdh5j94865zmv3tcldzqpzycle4z7m7kc0wk`,
+  en: `✨ Join Bourse Nostalgie powered by Cloud Gemini Pro v2.6! Trade tokenized human experiences in SPIN value backed by 500+ live Scout nodes.\n👤 Account: elbrirchi47@gmail.com\n₿ Bitcoin SegWit Wallet: bc1qlrpdh5j94865zmv3tcldzqpzycle4z7m7kc0wk\n🔗 Direct Link: https://bourse-nostalgie.web3/intl?ref=elbrirchi47@gmail.com&segwit=bc1qlrpdh5j94865zmv3tcldzqpzycle4z7m7kc0wk`,
+  ja: `✨ Cloud Gemini Pro v2.6搭載の「Bourse Nostalgie」に参加しよう！500以上のScoutノードと連携し、SPIN価値で感情資産を取引。\n👤 アカウント: elbrirchi47@gmail.com\n₿ ビットコイン SegWit: bc1qlrpdh5j94865zmv3tcldzqpzycle4z7m7kc0wk\n🔗 リンク: https://bourse-nostalgie.web3/intl?ref=elbrirchi47@gmail.com&segwit=bc1qlrpdh5j94865zmv3tcldzqpzycle4z7m7kc0wk`,
+  es: `✨ ¡Únete a Bourse Nostalgie impulsado por Cloud Gemini Pro v2.6! Intercambia activos emocionales en valor SPIN con más de 500 nodos Scout.\n👤 Cuenta: elbrirchi47@gmail.com\n₿ Billetera Bitcoin SegWit: bc1qlrpdh5j94865zmv3tcldzqpzycle4z7m7kc0wk\n🔗 Enlace: https://bourse-nostalgie.web3/intl?ref=elbrirchi47@gmail.com&segwit=bc1qlrpdh5j94865zmv3tcldzqpzycle4z7m7kc0wk`,
+  ar: `✨ انضم إلى Bourse Nostalgie المدعوم من Cloud Gemini Pro v2.6! تداول الأصول العاطفية بقيمة SPIN عبر أكثر من 500 عقدة Scout متصلة.\n👤 الحساب: elbrirchi47@gmail.com\n₿ محفظة بيتكوين SegWit: bc1qlrpdh5j94865zmv3tcldzqpzycle4z7m7kc0wk\n🔗 الرابط: https://bourse-nostalgie.web3/intl?ref=elbrirchi47@gmail.com&segwit=bc1qlrpdh5j94865zmv3tcldzqpzycle4z7m7kc0wk`,
+  de: `✨ Werde Teil von Bourse Nostalgie powered by Cloud Gemini Pro v2.6! Handle emotionale Assets in SPIN-Wert mit über 500 verbundenen Scout-Knoten.\n👤 Konto: elbrirchi47@gmail.com\n₿ Bitcoin SegWit-Wallet: bc1qlrpdh5j94865zmv3tcldzqpzycle4z7m7kc0wk\n🔗 Link: https://bourse-nostalgie.web3/intl?ref=elbrirchi47@gmail.com&segwit=bc1qlrpdh5j94865zmv3tcldzqpzycle4z7m7kc0wk`
+};
+
+function renderIntlRegions() {
+  const grid = document.getElementById("intl-regions-grid");
+  if (!grid) return;
+  grid.innerHTML = state.regions.map(r => `
+    <div class="panel-box ${r.active ? "panel-cyan" : ""}">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+        <span style="font-size:10px;font-weight:800;color:${r.active ? "#10b981" : "#94a3b8"}">${r.active ? "● DIFFUSION ACTIVE" : "○ EN VEILLE"}</span>
+        <span style="font-size:11px;font-weight:800;color:#fbbf24">+${r.multBonus.toFixed(2)}x SPIN</span>
+      </div>
+      <h4 style="color:#fff;font-size:14px;font-weight:800;margin-bottom:6px">${esc(r.name)}</h4>
+      <div style="font-size:11px;color:#67e8f9;margin-bottom:12px">Audience potentielle : <b>${fmtInt(r.reach)}</b> investisseurs</div>
+      <button class="btn ${r.active ? "btn-success" : "btn-violet"}" style="width:100%" onclick="toggleIntlRegion('${r.id}')">
+        ${r.active ? "✅ Zone Active (Cliquer pour ajuster)" : "🚀 Activer la Promotion Régionale"}
+      </button>
+    </div>
+  `).join("");
+}
+
+function toggleIntlRegion(id) {
+  const reg = state.regions.find(r => r.id === id);
+  if (!reg) return;
+  reg.active = !reg.active;
+  if (reg.active) {
+    state.promoAudience += reg.reach;
+    state.countriesCount = Math.min(195, state.countriesCount + 14);
+    state.realConnected += 28;
+    pushLog("INTL", `🌍 <b style="color:#67e8f9">CAMPAGNE INTERNATIONALE LANCÉE</b> : <b>${esc(reg.name)}</b> (+${reg.multBonus.toFixed(2)}x SPIN).`);
+    showToast("🌍 Zone Internationale Activée", `${esc(reg.name)} est désormais connectée.`, "#06b6d4");
+  } else {
+    pushLog("INTL", `⏸️ Campagne régionale mise en pause : ${esc(reg.name)}.`);
+  }
+  dirty.intl = true;
+  dirty.kpis = true;
+  dirty.spin = true;
+}
+
+function launchAllInternationalRegions() {
+  let addedReach = 0;
+  state.regions.forEach(r => {
+    if (!r.active) {
+      r.active = true;
+      addedReach += r.reach;
+    }
+  });
+  state.promoAudience += addedReach;
+  state.countriesCount = 142;
+  state.realConnected += 120;
+  pushLog("INTL", `🚀 <b style="color:#fbbf24">PROPULSION INTERNATIONALE TOTALE</b> : Les 6 zones continentales (142 pays) sont actives ! Multiplicateur global <b>x${getEffectiveMultiplier().toFixed(2)}</b>.`);
+  showToast("🚀 Propulsion Internationale Totale !", "Toutes les zones continentales (142 pays) diffusent vos actifs SPIN.", "#f59e0b");
+  dirty.intl = true;
+  dirty.kpis = true;
+  dirty.spin = true;
+}
+
+function setPromoLang(lang) {
+  state.promoLang = lang;
+  const ta = document.getElementById("multilingual-promo-output");
+  if (ta) ta.value = PROMO_TEMPLATES[lang] || PROMO_TEMPLATES.fr;
+}
+
+function copyMultilingualPromo() {
+  const ta = document.getElementById("multilingual-promo-output");
+  if (ta) copySafe(ta.value, "Message Promotionnel International");
+}
+
+function boostPromoCampaignEarnings() {
+  const bonus = 350.00;
+  state.spinBalance += bonus;
+  state.promoSpinGains += bonus;
+  state.promoAudience += 4200;
+  state.promoConversions += 145;
+  pushLog("INTL", `📣 <b style="color:#10b981">DIFFUSION VIRALE ENCAISSÉE</b> : +350.00 SPIN crédités sur <b>${ACCOUNT.email}</b>.`);
+  showToast("📣 Bonus Viral Encaissé", "+350.00 SPIN ajoutés à votre solde.", "#10b981");
+  dirty.kpis = true;
+  dirty.intl = true;
+}
+
+// ============================================================================
+// 8. MOTEUR SPIN, CONVERSION BIDIRECTIONNELLE & ROUTAGE SEGWIT
+// ============================================================================
+function syncSpinConverter(source) {
+  const spinEl = document.getElementById("calc-input-spin");
+  const btcEl = document.getElementById("calc-input-btc");
+  const eurEl = document.getElementById("calc-input-eur");
+  if (!spinEl || !btcEl || !eurEl) return;
+
+  let spinVal = parseFloat(spinEl.value) || 0;
+  if (source === "btc") {
+    spinVal = (parseFloat(btcEl.value) || 0) * ACCOUNT.spinPerBtc;
+    spinEl.value = spinVal.toFixed(2);
+  } else if (source === "eur") {
+    const btcVal = (parseFloat(eurEl.value) || 0) / ACCOUNT.eurPerBtc;
+    spinVal = btcVal * ACCOUNT.spinPerBtc;
+    spinEl.value = spinVal.toFixed(2);
+  }
+
+  const btc = spinVal / ACCOUNT.spinPerBtc;
+  const eur = btc * ACCOUNT.eurPerBtc;
+  if (source !== "btc") btcEl.value = btc.toFixed(6);
+  if (source !== "eur") eurEl.value = eur.toFixed(2);
+
+  const effMult = getEffectiveMultiplier();
+  const netYield = spinVal * 1.25 * effMult;
+  document.getElementById("spin-calc-mult").textContent = `x${effMult.toFixed(2)}`;
+  document.getElementById("spin-calc-net-result").textContent = `${fmtSpin(netYield)} SPIN`;
+}
+
+function executeSpinTransaction(quick = false, customAsset = null) {
+  const spinEl = document.getElementById("calc-input-spin");
+  const base = quick ? (customAsset ? customAsset.spinPrice * 0.25 : 420) : (parseFloat(spinEl?.value) || 500);
+  const effMult = getEffectiveMultiplier();
+  const netSpin = Number((base * 1.25 * effMult).toFixed(2));
+  const txid = fakeSha256Txid();
+  const assetName = customAsset ? customAsset.title : "Transaction Spin Directe Cloud Gemini Pro";
+
+  state.spinBalance += netSpin;
+  state.spinVolume24h += netSpin;
+  state.txCount24h += 1;
+
+  spinTxHistory.unshift({ txid, title: assetName, amount: netSpin, mult: effMult, time: new Date().toLocaleTimeString("fr-FR") });
+  if (spinTxHistory.length > 40) spinTxHistory.pop();
+
+  pushLog("SPIN", `💎 <b style="color:#fbbf24">TRANSACTION SPIN VALIDÉE</b> : <b>+${fmtSpin(netSpin)} SPIN</b> (x${effMult.toFixed(2)}) • TXID <code>${txid.slice(0, 18)}…</code>`);
+  showToast("💎 Transaction Spin Exécutée", `Gain net : <b>+${fmtSpin(netSpin)} SPIN</b><br>TXID : <code>${txid.slice(0, 16)}…</code>`, "#f59e0b");
+
+  dirty.kpis = true;
+  dirty.spin = true;
+}
+
+function routeSpinToSegWit() {
+  if (state.spinBalance < 100) {
+    showToast("⚠️ Solde insuffisant", "Minimum 100.00 SPIN requis pour le routage SegWit.", "#f59e0b");
+    return;
+  }
+  const amount = Number((state.spinBalance * 0.5).toFixed(2));
+  state.spinBalance -= amount;
+  state.routedSpin += amount;
+  const btcEq = (amount / ACCOUNT.spinPerBtc).toFixed(6);
+
+  pushLog("SPIN", `₿ <b style="color:#10b981">ROUTAGE BITCOIN SEGWIT</b> : <b>${fmtSpin(amount)} SPIN</b> (${btcEq} BTC) envoyés vers <code>${ACCOUNT.segwit}</code>.`);
+  showToast("₿ Routage Bitcoin SegWit Confirmé", `<b>${fmtSpin(amount)} SPIN</b> (${btcEq} BTC) routés vers :<br><code style="color:#fbbf24">${ACCOUNT.segwit}</code>`, "#10b981");
+
+  dirty.kpis = true;
+  dirty.spin = true;
+}
+
+// ============================================================================
+// 9. TITRISATION IA CLOUD GEMINI PRO (MODAL) & EXPORTS
+// ============================================================================
+function openMintModal() {
+  const m = document.getElementById("mint-modal");
+  if (m) m.style.display = "flex";
+}
+
+function closeMintModal() {
+  const m = document.getElementById("mint-modal");
+  if (m) m.style.display = "none";
+}
+
+function submitGeminiMint() {
+  const titleEl = document.getElementById("mint-title-input");
+  const catEl = document.getElementById("mint-cat-input");
+  const descEl = document.getElementById("mint-desc-input");
+  const scanBox = document.getElementById("gemini-scanner-box");
+  const scanFill = document.getElementById("gemini-scanner-fill");
+
+  const title = titleEl.value.trim();
+  const cat = catEl.value;
+  const desc = descEl.value.trim();
+
+  if (!title || !desc) {
+    showToast("⚠️ Champs requis", "Renseignez un titre et une description émotionnelle.", "#f59e0b");
+    return;
+  }
+
+  scanBox.style.display = "block";
+  scanFill.style.width = "0%";
+  requestAnimationFrame(() => { scanFill.style.width = "100%"; });
+
+  setTimeout(() => {
+    scanBox.style.display = "none";
+    scanFill.style.width = "0%";
+    closeMintModal();
+
+    const evaluatedSpin = 1800 + desc.length * 18 + Math.floor(Math.random() * 3500);
+    assets.unshift({
+      id: "MY-" + Date.now(),
+      title: title + " ✨",
+      category: cat,
+      spinPrice: evaluatedSpin,
+      owner: ACCOUNT.email,
+      isMine: true,
+      boosted: true,
+      desc
+    });
+
+    state.myAssetsCount += 1;
+    state.spinBalance += evaluatedSpin;
+    titleEl.value = "";
+    descEl.value = "";
+
+    pushLog("CLOUD", `✨ <b style="color:#10b981">ACTIF TITRISÉ PAR GEMINI PRO</b> : « <i>${esc(title)}</i> » évalué à <b>${fmtSpin(evaluatedSpin)} SPIN</b> pour <b>${ACCOUNT.email}</b>.`);
+    showToast("✨ Titrisé avec Cloud Gemini Pro", `« ${esc(title)} » coté à <b>${fmtSpin(evaluatedSpin)} SPIN</b> et crédité.`, "#10b981");
+
+    dirty.kpis = true;
+    dirty.market = true;
+    switchTab("market");
+  }, 1550);
+}
+
+function downloadCredentialsFile() {
+  const content = `===========================================================================
+BOURSE NOSTALGIE — CLOUD GEMINI PRO v2.6 & WALLET BITCOIN SEGWIT
+===========================================================================
+Date d'export : ${new Date().toLocaleString("fr-FR")}
+
+🔐 IDENTIFIANTS & SYNCHRONISATION WEB3
+---------------------------------------------------------------------------
+Compte Principal (Email)       : ${ACCOUNT.email}
+Statut Cloud IA                : CLOUD GEMINI PRO : CONNECTÉ (v2.6 Neural Core)
+Adresse Bitcoin SegWit         : ${ACCOUNT.segwit}
+Clé Akshique de récupération   : ${ACCOUNT.akshicKey}
+Solde Valeur Spin              : ${fmtSpin(state.spinBalance)} SPIN
+Total Routé vers SegWit        : ${fmtSpin(state.routedSpin)} SPIN (${(state.routedSpin / ACCOUNT.spinPerBtc).toFixed(6)} BTC)
+Réseau Actif                   : Scout 500+ (${fmtInt(state.realConnected)}+ Connectés Réels)
+---------------------------------------------------------------------------
+Conservez ce fichier en lieu sûr.
+===========================================================================`;
+
+  const blob = new Blob([content], { type: "text/plain;charset=utf-8" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "Identifiants_Bourse_Nostalgie_GeminiPro_SegWit.txt";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+  showToast("📥 Fichier Sécurisé Téléchargé", "Vos identifiants et adresse SegWit ont été exportés (.txt).", "#10b981");
+}
+
+function exportFullHtmlFile() {
+  const htmlSource = "<!DOCTYPE html>\n" + document.documentElement.outerHTML;
+  const blob = new Blob([htmlSource], { type: "text/html;charset=utf-8" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "Bourse_Nostalgie_Cloud_Gemini_Pro_Complet.html";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+  showToast("📥 Application HTML Exportée", "Le fichier HTML autonome complet a été téléchargé.", "#06b6d4");
+}
+
+// ============================================================================
+// 10. RENDU MARCHÉ, ONGLETS & BOUCLE UI 60 FPS
+// ============================================================================
+function setMarketFilter(mode) {
+  state.marketFilter = mode;
+  ["all", "mine", "boost"].forEach(m => {
+    const b = document.getElementById("mfilter-" + m);
+    if (b) {
+      b.style.borderColor = m === mode ? "#f59e0b" : "#8b5cf6";
+      b.style.color = m === mode ? "#fbbf24" : "#c4b5fd";
+    }
+  });
+  renderMarket();
+}
+
+function renderMarket() {
+  const grid = document.getElementById("market-grid");
+  const countEl = document.getElementById("market-count");
+  const catSel = document.getElementById("market-cat-select");
+  const searchEl = document.getElementById("market-search");
+  if (!grid) return;
+
+  if (countEl) countEl.textContent = fmtInt(assets.length);
+  const cat = catSel ? catSel.value : "ALL";
+  const q = searchEl ? searchEl.value.trim().toLowerCase() : "";
+
+  let list = assets;
+  if (state.marketFilter === "mine") list = list.filter(a => a.isMine);
+  if (state.marketFilter === "boost") list = list.filter(a => a.boosted);
+  if (cat !== "ALL") list = list.filter(a => a.category === cat);
+  if (q) list = list.filter(a => a.title.toLowerCase().includes(q) || a.desc.toLowerCase().includes(q));
+
+  const slice = list.slice(0, 36);
+  if (slice.length === 0) {
+    grid.innerHTML = `<div style="grid-column:1/-1;text-align:center;padding:36px;color:#94a3b8">Aucun actif ne correspond à ces critères.</div>`;
+    return;
+  }
+
+  grid.innerHTML = slice.map(a => `
+    <article class="card ${a.isMine ? "mine" : ""} ${a.boosted ? "promoted" : ""}">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:6px">
+          <div style="display:flex;gap:5px;flex-wrap:wrap">
+            <span style="font-size:10px;background:#2d2447;padding:3px 8px;border-radius:999px;color:#c4b5fd;font-weight:700">${esc(a.category)}</span>
+            ${a.boosted ? `<span style="font-size:10px;background:rgba(6,182,212,0.2);padding:3px 8px;border-radius:999px;color:#67e8f9;font-weight:800">⚡ PROPULSÉ</span>` : ""}
+          </div>
+          <div class="price-tag">${fmtInt(a.spinPrice)} SPIN</div>
+        </div>
+        <h3 class="card-title">${esc(a.title)}</h3>
+        <div style="font-size:10px;color:#94a3b8">Détenteur : <b style="color:${a.isMine ? "#10b981" : "#f59e0b"}">${esc(a.owner)}</b></div>
+        <div class="essence-box">"${esc(a.desc)}"</div>
+      </div>
+      <div style="display:flex;gap:8px;margin-top:14px">
+        <button class="btn btn-primary" style="flex:1" onclick="buyOrSpinAsset('${a.id}')">💎 Échanger / Spin</button>
+        <button class="btn btn-cyan" onclick="boostSingleAsset('${a.id}')" title="Propulser cet actif (+25%)">🚀</button>
+      </div>
+    </article>
+  `).join("");
+}
+
+function buyOrSpinAsset(id) {
+  const a = assets.find(x => x.id === id);
+  executeSpinTransaction(true, a);
+}
+
+function boostSingleAsset(id) {
+  const a = assets.find(x => x.id === id);
+  if (!a) return;
+  a.boosted = true;
+  a.spinPrice = Math.round(a.spinPrice * 1.25);
+  const bonus = Number((a.spinPrice * 0.06).toFixed(2));
+  state.spinBalance += bonus;
+  pushLog("INTL", `🚀 <b style="color:#67e8f9">ACTIF PROPULSÉ (+25%)</b> : « <i>${esc(a.title)}</i> » porté à <b>${fmtInt(a.spinPrice)} SPIN</b> (+${fmtSpin(bonus)} SPIN).`);
+  showToast("🚀 Actif Propulsé", `« ${esc(a.title)} » gagne +25% (${fmtInt(a.spinPrice)} SPIN).`, "#06b6d4");
+  dirty.market = true;
+  dirty.kpis = true;
+}
+
+function initTicker() {
+  const el = document.getElementById("ticker-content");
+  if (!el) return;
+  let items = "";
+  for (let i = 0; i < 30; i++) {
+    const a = assets[i];
+    const hub = WORLD_CITIES[i % WORLD_CITIES.length];
+    items += `<div class="ticker-item">${esc(a.title)} : <span class="gold">${fmtInt(a.spinPrice)} SPIN</span> <span class="up">▲ +${(2.4 + (i % 9) * 0.7).toFixed(1)}%</span> • ${hub.flag} ${hub.city} <span class="cyan">LIVE</span></div>`;
+  }
+  el.innerHTML = items + items;
+}
+
+function setLogFilter(filter) {
+  state.logFilter = filter;
+  dirty.logs = true;
+}
+
+function switchTab(tabId, btn) {
+  document.querySelectorAll(".tab-content").forEach(el => { el.style.display = "none"; });
+  document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+  const target = document.getElementById("tab-" + tabId);
+  if (target) target.style.display = "block";
+  if (btn) {
+    btn.classList.add("active");
+  } else {
+    document.querySelectorAll(".tab-btn").forEach(b => {
+      if ((b.getAttribute("onclick") || "").includes(`'${tabId}'`)) b.classList.add("active");
+    });
+  }
+  if (tabId === "market") renderMarket();
+  if (tabId === "spin") syncSpinConverter("spin");
+}
+
+let lastMarketPaint = 0;
+function renderLoop(now) {
+  if (dirty.kpis) {
+    dirty.kpis = false;
+    const btcEq = state.spinBalance / ACCOUNT.spinPerBtc;
+    const eurEq = btcEq * ACCOUNT.eurPerBtc;
+
+    document.getElementById("header-spin-balance").textContent = `${fmtSpin(state.spinBalance)} SPIN`;
+    document.getElementById("header-btc-eur-eq").textContent = `≈ ${btcEq.toFixed(6)} BTC • ${fmtSpin(eurEq)} €`;
+
+    document.getElementById("kpi-real-connected").textContent = `${fmtInt(state.realConnected)}+`;
+    document.getElementById("subbar-connected-count").textContent = `${fmtInt(state.realConnected)}+ Pairs`;
+    document.getElementById("net-tab-connected").textContent = `${fmtInt(state.realConnected)}+ Pairs`;
+
+    const volBtc = state.spinVolume24h / ACCOUNT.spinPerBtc;
+    document.getElementById("kpi-spin-volume").textContent = `${fmtInt(state.spinVolume24h)} SPIN`;
+    document.getElementById("kpi-spin-btc-vol").textContent = `Conversion : ${volBtc.toFixed(4)} BTC • ${fmtInt(state.txCount24h)} Tx`;
+
+    const effMult = getEffectiveMultiplier();
+    const mode = PROPULSION_MODES[state.modeIndex];
+    document.getElementById("kpi-boost-mult").textContent = `x${effMult.toFixed(2)}`;
+    document.getElementById("kpi-boost-mode").textContent = `Mode : ${mode.name} (${mode.ms}ms)`;
+
+    document.getElementById("kpi-intl-reach").textContent = `${state.countriesCount} pays, 6 continents`;
+    document.getElementById("kpi-intl-audience").textContent = `Audience : ${fmtInt(state.promoAudience)} investisseurs`;
+
+    document.getElementById("kpi-my-assets").textContent = fmtInt(state.myAssetsCount);
+    document.getElementById("kpi-auto-forged").textContent = `Auto-forgés : ${fmtInt(state.autoForgedCount)} (elbrirchi47)`;
+
+    document.getElementById("wallet-tab-spin-bal").textContent = `${fmtSpin(state.spinBalance)} SPIN`;
+    const routedBtc = (state.routedSpin / ACCOUNT.spinPerBtc).toFixed(6);
+    document.getElementById("wallet-tab-routed-bal").textContent = `${fmtSpin(state.routedSpin)} SPIN (${routedBtc} BTC)`;
+    document.getElementById("analytics-routed-total").textContent = `${fmtInt(state.routedSpin)} SPIN`;
+    document.getElementById("cloud-latency-badge").textContent = `${2 + (state.txCount24h % 5)}ms`;
+  }
+
+  if (dirty.boost) {
+    dirty.boost = false;
+    const mode = PROPULSION_MODES[state.modeIndex];
+    const effMult = getEffectiveMultiplier();
+    const activeFactor = state.propulsionActive ? 1 : 0.45;
+    const rpm = Math.round(mode.rpm * activeFactor);
+    const vel = (145 * effMult * activeFactor).toFixed(1);
+    const loadPct = Math.round(mode.load * activeFactor);
+
+    document.getElementById("propulsion-badge-state").textContent = state.propulsionActive ? `PROPULSION ACTIVE (${mode.ms}ms)` : "EN VEILLE";
+    document.getElementById("kinetic-rpm-text").textContent = `${fmtInt(rpm)} RPM`;
+    document.getElementById("kinetic-velocity-text").textContent = `Vélocité Spin : ${vel} SPIN/sec • Charge Neural Core : ${loadPct}%`;
+    document.getElementById("kinetic-gauge-mult").textContent = `x${effMult.toFixed(1)}`;
+    const arc = document.getElementById("kinetic-arc");
+    if (arc) arc.setAttribute("stroke-dashoffset", String(state.propulsionActive ? mode.dashOffset : 145));
+    document.getElementById("energy-pct-label").textContent = `${loadPct}%`;
+    document.getElementById("energy-bar-fill").style.width = `${loadPct}%`;
+
+    document.getElementById("auto-forged-counter").textContent = fmtInt(state.autoForgedCount);
+    document.getElementById("auto-forged-spin-val").textContent = `${fmtSpin(state.autoForgedSpinTotal)} SPIN`;
+
+    const feedEl = document.getElementById("auto-creator-feed");
+    if (feedEl) {
+      feedEl.innerHTML = autoForgedFeed.map(item =>
+        `<div class="log-line">🧠 <b>${esc(item.title)}</b> [${item.cat}] → <span style="color:#10b981;font-weight:800">+${fmtInt(item.spinVal)} SPIN</span> <span style="color:#64748b">[${item.time}]</span></div>`
+      ).join("");
+    }
+  }
+
+  if (dirty.network) {
+    dirty.network = false;
+    for (let s = 1; s <= 4; s++) {
+      const el = document.getElementById("pipe-step-" + s);
+      if (el) el.classList.toggle("active-stage", s === state.pipelineStage);
+    }
+    const peerEl = document.getElementById("international-peers-feed");
+    if (peerEl) {
+      peerEl.innerHTML = intlIncomingFeed.map(p =>
+        `<div class="log-line">🌐 <b>${esc(p.hub)}</b> • Flux entrant <span style="color:#67e8f9;font-weight:800">+${fmtInt(p.spinFlow)} SPIN</span> <span style="color:#64748b">[${p.time}]</span></div>`
+      ).join("");
+    }
+  }
+
+  if (dirty.intl) {
+    dirty.intl = false;
+    renderIntlRegions();
+    const activeCount = state.regions.filter(r => r.active).length;
+    document.getElementById("promo-audience-val").textContent = fmtInt(state.promoAudience);
+    document.getElementById("promo-regions-active-sub").textContent = `${activeCount} / 6 Zones Continentales Actives`;
+    document.getElementById("promo-conv-count").textContent = `${fmtInt(state.promoConversions)} acquisitions Spin générées`;
+    document.getElementById("promo-spin-gains").textContent = `+${fmtSpin(state.promoSpinGains)} SPIN`;
+  }
+
+  if (dirty.spin) {
+    dirty.spin = false;
+    syncSpinConverter("spin");
+    const histEl = document.getElementById("spin-tx-history");
+    if (histEl) {
+      histEl.innerHTML = spinTxHistory.map(tx =>
+        `<div class="log-line" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px">
+          <span>💎 <b>${esc(tx.title)}</b> (x${tx.mult.toFixed(2)}) • TXID: <code style="color:#67e8f9">${tx.txid.slice(0, 22)}…</code></span>
+          <span style="color:#10b981;font-weight:900">+${fmtSpin(tx.amount)} SPIN <span style="color:#64748b;font-weight:400">[${tx.time}]</span></span>
+        </div>`
+      ).join("");
+    }
+  }
+
+  if (dirty.logs) {
+    dirty.logs = false;
+    const logEl = document.getElementById("global-akashic-logs");
+    if (logEl) {
+      const list = state.logFilter === "ALL" ? akashicLogs : akashicLogs.filter(l => l.type === state.logFilter);
+      logEl.innerHTML = list.map(l => `<div class="log-line">› ${l.html}</div>`).join("");
+    }
+  }
+
+  if (dirty.market && now - lastMarketPaint > 450) {
+    const mTab = document.getElementById("tab-market");
+    if (mTab && mTab.style.display !== "none") {
+      dirty.market = false;
+      lastMarketPaint = now;
+      renderMarket();
+    }
+  }
+
+  requestAnimationFrame(renderLoop);
+}
+
+// ============================================================================
+// 11. INITIALISATION AU DÉMARRAGE
+// ============================================================================
+window.onload = () => {
+  buildSegWitQRCode();
+  initTicker();
+  buildScout500Matrix();
+  inspectScout(1);
+  setMarketFilter("all");
+  setPromoLang("fr");
+  syncSpinConverter("spin");
+
+  // Amorçage des flux initiaux
+  autoForgedFeed.push(
+    { title: "Méditation face à l'Océan ✨", cat: "Intérieur", spinVal: 4500, time: "17:01:10" },
+    { title: "Aurore Boréale & Clarté ✨", cat: "Épiphanie", spinVal: 5400, time: "17:02:04" }
+  );
+
+  WORLD_CITIES.slice(0, 6).forEach((h, idx) => {
+    intlIncomingFeed.push({
+      hub: `${h.flag} ${h.city} (${h.zone})`,
+      spinFlow: 1450 + idx * 420,
+      time: "17:02:45"
+    });
+  });
+
+  spinTxHistory.push({
+    txid: fakeSha256Txid(),
+    title: "Méditation face à l'Océan ✨",
+    amount: 1125.00,
+    mult: 2.10,
+    time: "17:02:58"
+  });
+
+  pushLog("CLOUD", `☁️ <b style="color:#10b981">CLOUD GEMINI PRO : CONNECTÉ (v2.6 Neural Core)</b> — Compte <b>${ACCOUNT.email}</b> synchronisé.`);
+  pushLog("SPIN", `₿ <b style="color:#fbbf24">WALLET SEGWIT VERROUILLÉ</b> : <code>${ACCOUNT.segwit}</code> prêt à recevoir les conversions SPIN.`);
+  pushLog("INTL", `🌐 <b style="color:#67e8f9">RÉSEAU SCOUT 500+ ACTIF</b> : 512+ connectés réels sur Paris, Tokyo, New York, Londres, Séoul, Dubaï, São Paulo, Singapour, Montréal et Berlin.`);
+
+  requestAnimationFrame(renderLoop);
+};
+</script>
+</body>
+</html>
